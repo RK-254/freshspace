@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FreshSpace Hygiene & Pest Solutions provides reliable cleaning, hygiene and pest control services.">
+  <title>FreshSpace Hygiene & Pest Solutions</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #26352d;
+      line-height: 1.6;
+    }
+    header {
+      background: #176b45;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 { margin: 0; font-size: 27px; }
+    header p { margin: 4px 0 0; }
+    nav {
+      background: #104d32;
+      padding: 12px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+    nav a { color: white; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    .hero {
+      background: #edf6ef;
+      text-align: center;
+      padding: 70px 20px;
+    }
+    .hero h2 { font-size: 36px; margin: 0 0 12px; }
+    .hero p { max-width: 650px; margin: 0 auto 24px; }
+    .btn {
+      display: inline-block;
+      background: #176b45;
+      color: white;
+      padding: 12px 22px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section { padding: 45px 20px; }
+    section h2 { text-align: center; color: #176b45; }
+    .services {
+      max-width: 1050px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .service {
+      padding: 24px;
+      border: 1px solid #dce8df;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .service h3 { color: #176b45; }
+    .about { background: #f5f8f5; text-align: center; }
+    .about p { max-width: 750px; margin: auto; }
+    .contact { text-align: center; }
+    footer {
+      background: #104d32;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      .hero h2 { font-size: 28px; }
+      nav { gap: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FreshSpace</h1>
+    <p>Hygiene &amp; Pest Solutions</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#services">Our Services</a>
+    <a href="#contact">Contact Us</a>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <h2>A Cleaner, Healthier Space</h2>
+      <p>Reliable hygiene, cleaning and pest management solutions for homes, offices and businesses.</p>
+      <a class="btn" href="#services">Explore Our Services</a>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About Us</h2>
+      <p>FreshSpace Hygiene &amp; Pest Solutions is committed to helping customers maintain cleaner, safer and more comfortable spaces through dependable hygiene and pest management services.</p>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="services">
+        <article class="service">
+          <h3>Cleaning Services</h3>
+          <p>Cleaning solutions for homes, offices and commercial spaces.</p>
+        </article>
+        <article class="service">
+          <h3>Pest Control</h3>
+          <p>Practical pest management solutions tailored to your space.</p>
+        </article>
+        <article class="service">
+          <h3>General Hygiene</h3>
+          <p>Hygiene support to help maintain clean and healthy environments.</p>
+        </article>
+        <article class="service">
+          <h3>Sanitation</h3>
+          <p>Sanitation services to support cleaner surroundings.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <p>Need cleaning or pest management services? Contact FreshSpace to discuss your needs.</p>
+      <p>Please add your business phone number or email address here.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 FreshSpace Hygiene &amp; Pest Solutions. All rights reserved.</p>
+  </footer>
+</body>
+</html>
