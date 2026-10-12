@@ -4,92 +4,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Services | FreshSpace Hygiene & Pest Solutions</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: Arial, sans-serif; line-height: 1.7; color: #26352c; }
-    header { padding: 18px 6%; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; box-shadow: 0 2px 8px #ddd; }
-    .brand { color: #176b45; font-size: 21px; font-weight: bold; text-decoration: none; }
-    nav { display: flex; gap: 18px; flex-wrap: wrap; }
-    nav a { color: #26352c; text-decoration: none; font-weight: bold; font-size: 14px; }
-    nav a:hover { color: #20a464; }
-    .hero { background: #176b45; color: white; padding: 60px 7%; text-align: center; }
-    .hero h1 { font-size: 38px; margin-bottom: 10px; }
-    main { padding: 45px 7%; max-width: 1150px; margin: auto; }
-    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; }
-    .card { border-radius: 9px; padding: 26px; background: #f2f8f4; border-bottom: 4px solid #20a464; }
-    .card h2 { color: #176b45; font-size: 22px; margin-bottom: 12px; }
-    .card p { margin-bottom: 12px; }
-    .cta { text-align: center; background: #e8f4ec; padding: 40px 7%; }
-    .cta h2 { color: #176b45; margin-bottom: 10px; }
-    .cta a { display: inline-block; margin: 12px 6px 0; padding: 12px 20px; border-radius: 5px; background: #176b45; color: white; text-decoration: none; font-weight: bold; }
-    footer { background: #103d29; color: white; padding: 20px; text-align: center; }
-    @media(max-width: 600px) { header { flex-direction: column; } nav { justify-content: center; gap: 12px; } .hero h1 { font-size: 30px; } }
-  </style>
+  <title>Our Services | FreshSpace Hygiene &amp; Pest Solutions</title>
+  <meta name="description" content="Explore cleaning, hygiene and pest-control services from FreshSpace Hygiene & Pest Solutions.">
+  <link rel="icon" type="image/jpeg" href="WhatsApp%20Image%202026-10-10%20at%2020.51.48.jpeg">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <a class="brand" href="index.html">FreshSpace</a>
-    <nav>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img src="WhatsApp%20Image%202026-10-10%20at%2020.51.48%20(1).jpeg" alt="FreshSpace logo">
+      <span>FreshSpace Hygiene<br>&amp; Pest Solutions</span>
+    </a>
+    <nav aria-label="Main navigation">
       <a href="index.html">Home</a>
       <a href="about-us.html">About Us</a>
-      <a href="our-services.html">Our Services</a>
+      <a class="active" href="our-services.html">Our Services</a>
+      <a href="gallery.html">Gallery</a>
       <a href="contact-us.html">Contact Us</a>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <section class="hero">
-    <h1>Our Services</h1>
-    <p>Hygiene and pest solutions for cleaner, healthier spaces.</p>
-  </section>
-
-  <main>
-    <div class="services">
-      <article class="card">
-        <h2>Cleaning Services</h2>
-        <p>Cleaning solutions for homes, offices and business premises.</p>
-        <p>We aim to help maintain neat, comfortable and welcoming spaces.</p>
-      </article>
-
-      <article class="card">
-        <h2>Pest Control</h2>
-        <p>Pest management solutions to help address unwanted pests in homes and workplaces.</p>
-        <p>Service requirements can be discussed according to your specific needs.</p>
-      </article>
-
-      <article class="card">
-        <h2>Hygiene Solutions</h2>
-        <p>Hygiene-focused services designed to support cleaner environments.</p>
-        <p>Contact us to discuss the most suitable service for your premises.</p>
-      </article>
-
-      <article class="card">
-        <h2>Residential Solutions</h2>
-        <p>Support for households looking to improve cleanliness and manage pest concerns.</p>
-      </article>
-
-      <article class="card">
-        <h2>Commercial Solutions</h2>
-        <p>Services for offices, shops and other business premises based on their needs.</p>
-      </article>
-
-      <article class="card">
-        <h2>Tailored Service</h2>
-        <p>Tell us about your space and requirements so we can discuss a suitable solution.</p>
-      </article>
+<main>
+  <section class="page-banner">
+    <div class="container">
+      <h1>Our Services</h1>
+      <p>Hygiene and pest-solution services for homes and businesses.</p>
     </div>
-  </main>
-
-  <section class="cta">
-    <h2>Need Our Services?</h2>
-    <p>Get in touch to discuss your requirements.</p>
-    <a href="tel:+254181189836">Call Us</a>
-    <a href="https://wa.me/254181189836">WhatsApp Us</a>
   </section>
 
-  <footer>
-    <p>&copy; 2026 FreshSpace Hygiene &amp; Pest Solutions</p>
-  </footer>
+  <section class="section">
+    <div class="container">
+      <div class="section-heading">
+        <h2>What We Do</h2>
+        <p>Contact us to discuss the service you need and confirm availability for your location.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <img src="WhatsApp%20Image%202026-10-10%20at%2012.04.17.jpg" alt="Cleaning service">
+          <div class="card-content">
+            <h3>Cleaning Services</h3>
+            <p>Cleaning support for residential and commercial spaces to help maintain a neat and welcoming environment.</p>
+            <a href="contact-us.html">Enquire about cleaning &rarr;</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="WhatsApp%20Image%202026-10-10%20at%2016.12.49.jpeg" alt="Pest control service">
+          <div class="card-content">
+            <h3>Pest Control</h3>
+            <p>Pest-management solutions tailored to the pest problem, property and customer's requirements.</p>
+            <a href="contact-us.html">Enquire about pest control &rarr;</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="WhatsApp%20Image%202026-10-10%20at%2016.13.02.jpeg" alt="Hygiene solution">
+          <div class="card-content">
+            <h3>Hygiene Solutions</h3>
+            <p>Hygiene-focused services to help customers maintain cleaner and more comfortable spaces.</p>
+            <a href="contact-us.html">Enquire about hygiene &rarr;</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-light">
+    <div class="container two-column">
+      <div>
+        <h2>Need a Specific Service?</h2>
+        <p>Tell us about your property, the service required and your location. Our team can discuss the next steps with you.</p>
+        <div class="button-row">
+          <a class="btn btn-green" href="contact-us.html">Contact Us</a>
+          <a class="btn btn-green" href="https://wa.me/254181189836?text=Hello%20FreshSpace%2C%20I%20would%20like%20to%20enquire%20about%20your%20services." target="_blank" rel="noopener">Ask on WhatsApp</a>
+        </div>
+      </div>
+      <div>
+        <img class="feature-image" src="WhatsApp%20Image%202026-10-11%20at%2015.38.43.jpg" alt="FreshSpace company van">
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p><strong>FreshSpace Hygiene &amp; Pest Solutions</strong></p>
+    <p><a href="index.html">Home</a> | <a href="contact-us.html">Contact Us</a></p>
+    <p>&copy; 2026 FreshSpace Hygiene &amp; Pest Solutions. All rights reserved.</p>
+  </div>
+</footer>
+
 </body>
 </html>
-```
