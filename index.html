@@ -1,140 +1,422 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="FreshSpace Hygiene & Pest Solutions provides reliable cleaning, hygiene and pest control services.">
+  <meta name="description" content="FreshSpace Hygiene & Pest Solutions provides hygiene, cleaning and pest control services.">
   <title>FreshSpace Hygiene & Pest Solutions</title>
+
   <style>
-    * { box-sizing: border-box; }
-    body {
+    * {
       margin: 0;
-      font-family: Arial, sans-serif;
-      color: #26352d;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
       line-height: 1.6;
+      color: #26352c;
+      background: #ffffff;
     }
+
     header {
-      background: #176b45;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 { margin: 0; font-size: 27px; }
-    header p { margin: 4px 0 0; }
-    nav {
-      background: #104d32;
-      padding: 12px;
+      background: #ffffff;
+      padding: 15px 6%;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
       flex-wrap: wrap;
-      gap: 24px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
     }
-    nav a { color: white; text-decoration: none; font-weight: bold; }
-    nav a:hover { text-decoration: underline; }
+
+    .brand {
+      color: #176b45;
+      font-size: 21px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .brand span {
+      display: block;
+      color: #65756a;
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #26352c;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #188653;
+    }
+
     .hero {
-      background: #edf6ef;
-      text-align: center;
-      padding: 70px 20px;
+      min-height: 520px;
+      padding: 75px 7%;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(90deg, rgba(7,48,29,0.92), rgba(7,48,29,0.48)),
+        url("WhatsApp Image 2026-10-10 at 16.12.44.jpeg")
+        center/cover no-repeat;
+      color: white;
     }
-    .hero h2 { font-size: 36px; margin: 0 0 12px; }
-    .hero p { max-width: 650px; margin: 0 auto 24px; }
+
+    .hero-content {
+      max-width: 680px;
+    }
+
+    .hero h1 {
+      font-size: clamp(34px, 5vw, 55px);
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 28px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
     .btn {
       display: inline-block;
-      background: #176b45;
-      color: white;
-      padding: 12px 22px;
+      padding: 13px 23px;
       border-radius: 5px;
       text-decoration: none;
       font-weight: bold;
     }
-    section { padding: 45px 20px; }
-    section h2 { text-align: center; color: #176b45; }
-    .services {
-      max-width: 1050px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-    .service {
-      padding: 24px;
-      border: 1px solid #dce8df;
-      border-radius: 10px;
-      text-align: center;
-    }
-    .service h3 { color: #176b45; }
-    .about { background: #f5f8f5; text-align: center; }
-    .about p { max-width: 750px; margin: auto; }
-    .contact { text-align: center; }
-    footer {
-      background: #104d32;
+
+    .btn-primary {
+      background: #20a464;
       color: white;
-      padding: 20px;
+    }
+
+    .btn-light {
+      background: white;
+      color: #176b45;
+    }
+
+    section {
+      padding: 65px 7%;
+    }
+
+    .section-heading {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 35px;
+    }
+
+    .section-heading h2 {
+      color: #176b45;
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    .intro {
+      text-align: center;
+      background: #f3f8f4;
+    }
+
+    .intro p {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 25px;
+    }
+
+    .service-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.09);
+    }
+
+    .service-card img {
+      display: block;
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .service-card div {
+      padding: 22px;
+    }
+
+    .service-card h3 {
+      color: #176b45;
+      margin-bottom: 10px;
+    }
+
+    .why-us {
+      background: #f3f8f4;
+    }
+
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 25px;
       text-align: center;
     }
-    @media (max-width: 600px) {
-      .hero h2 { font-size: 28px; }
-      nav { gap: 14px; }
+
+    .benefit {
+      background: white;
+      padding: 25px;
+      border-radius: 8px;
+    }
+
+    .benefit h3 {
+      color: #176b45;
+      margin-bottom: 8px;
+    }
+
+    .cta {
+      background: #176b45;
+      color: white;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .cta p {
+      margin-bottom: 22px;
+    }
+
+    footer {
+      background: #103d29;
+      color: white;
+      text-align: center;
+      padding: 25px 7%;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 12px 0;
+    }
+
+    @media (max-width: 800px) {
+      header {
+        flex-direction: column;
+      }
+
+      nav {
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .services,
+      .benefits {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .hero {
+        min-height: 450px;
+        padding: 55px 6%;
+      }
+    }
+
+    @media (max-width: 550px) {
+      .services,
+      .benefits {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        gap: 12px;
+      }
+
+      nav a {
+        font-size: 13px;
+      }
+
+      section {
+        padding: 45px 6%;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
     }
   </style>
 </head>
+
 <body>
+
   <header>
-    <h1>FreshSpace</h1>
-    <p>Hygiene &amp; Pest Solutions</p>
+    <a class="brand" href="index.html">
+      FreshSpace
+      <span>HYGIENE &amp; PEST SOLUTIONS</span>
+    </a>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about-us.html">About Us</a>
+      <a href="our-services.html">Our Services</a>
+      <a href="contact-us.html">Contact Us</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About Us</a>
-    <a href="#services">Our Services</a>
-    <a href="#contact">Contact Us</a>
-  </nav>
-
   <main>
-    <section class="hero" id="home">
-      <h2>A Cleaner, Healthier Space</h2>
-      <p>Reliable hygiene, cleaning and pest management solutions for homes, offices and businesses.</p>
-      <a class="btn" href="#services">Explore Our Services</a>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>A Cleaner Space. A Healthier Environment.</h1>
+        <p>
+          Professional hygiene, cleaning and pest solutions
+          for homes, offices and businesses.
+        </p>
+
+        <div class="buttons">
+          <a class="btn btn-primary"
+             href="our-services.html">Explore Our Services</a>
+
+          <a class="btn btn-light"
+             href="https://wa.me/254181189836">WhatsApp Us</a>
+        </div>
+      </div>
     </section>
 
-    <section id="about" class="about">
-      <h2>About Us</h2>
-      <p>FreshSpace Hygiene &amp; Pest Solutions is committed to helping customers maintain cleaner, safer and more comfortable spaces through dependable hygiene and pest management services.</p>
+    <section class="intro">
+      <div class="section-heading">
+        <h2>Welcome to FreshSpace</h2>
+      </div>
+      <p>
+        FreshSpace Hygiene &amp; Pest Solutions is committed to
+        helping create cleaner, safer and healthier spaces through
+        dependable hygiene and pest management solutions. We aim to
+        deliver professional service with care, quality and attention
+        to detail.
+      </p>
     </section>
 
-    <section id="services">
-      <h2>Our Services</h2>
+    <section>
+      <div class="section-heading">
+        <h2>What We Offer</h2>
+        <p>Practical solutions to keep your environment clean and protected.</p>
+      </div>
+
       <div class="services">
-        <article class="service">
-          <h3>Cleaning Services</h3>
-          <p>Cleaning solutions for homes, offices and commercial spaces.</p>
+        <article class="service-card">
+          <img
+            src="WhatsApp Image 2026-10-10 at 12.04.17.jpg"
+            alt="Cleaning and hygiene services">
+          <div>
+            <h3>Cleaning Services</h3>
+            <p>Cleaning solutions for residential, commercial and working spaces.</p>
+          </div>
         </article>
-        <article class="service">
-          <h3>Pest Control</h3>
-          <p>Practical pest management solutions tailored to your space.</p>
+
+        <article class="service-card">
+          <img
+            src="WhatsApp Image 2026-10-10 at 16.12.49.jpeg"
+            alt="Pest control service">
+          <div>
+            <h3>Pest Control</h3>
+            <p>Solutions to help manage unwanted pests and maintain hygienic spaces.</p>
+          </div>
         </article>
-        <article class="service">
-          <h3>General Hygiene</h3>
-          <p>Hygiene support to help maintain clean and healthy environments.</p>
-        </article>
-        <article class="service">
-          <h3>Sanitation</h3>
-          <p>Sanitation services to support cleaner surroundings.</p>
+
+        <article class="service-card">
+          <img
+            src="WhatsApp Image 2026-10-10 at 16.13.02.jpeg"
+            alt="Professional hygiene solutions">
+          <div>
+            <h3>Hygiene Solutions</h3>
+            <p>Hygiene-focused services tailored to the needs of homes and businesses.</p>
+          </div>
         </article>
       </div>
     </section>
 
-    <section id="contact" class="contact">
-      <h2>Contact Us</h2>
-      <p>Need cleaning or pest management services? Contact FreshSpace to discuss your needs.</p>
-      <p>Please add your business phone number or email address here.</p>
+    <section class="why-us">
+      <div class="section-heading">
+        <h2>Why Choose FreshSpace?</h2>
+        <p>We focus on service quality and a cleaner environment.</p>
+      </div>
+
+      <div class="benefits">
+        <div class="benefit">
+          <h3>Reliable Service</h3>
+          <p>We aim to provide dependable service that respects your time and space.</p>
+        </div>
+
+        <div class="benefit">
+          <h3>Professional Care</h3>
+          <p>We approach every job with care, attention and professionalism.</p>
+        </div>
+
+        <div class="benefit">
+          <h3>Customer Focus</h3>
+          <p>We listen to your needs and work towards practical solutions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Ready for a Fresher Space?</h2>
+      <p>Contact FreshSpace Hygiene &amp; Pest Solutions to discuss your needs.</p>
+
+      <div class="buttons" style="justify-content:center;">
+        <a class="btn btn-light" href="tel:+254181189836">
+          Call Us
+        </a>
+
+        <a class="btn btn-primary"
+           href="https://wa.me/254181189836">
+          Chat on WhatsApp
+        </a>
+      </div>
     </section>
   </main>
 
   <footer>
+    <strong>FreshSpace Hygiene &amp; Pest Solutions</strong>
+
+    <div class="contact-links">
+      <a href="tel:+254181189836">Phone Us</a>
+      <a href="https://wa.me/254181189836">WhatsApp</a>
+      <a href="contact-us.html">Contact Us</a>
+    </div>
+
     <p>&copy; 2026 FreshSpace Hygiene &amp; Pest Solutions. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
+```
