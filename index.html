@@ -4,36 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="FreshSpace Hygiene & Pest Solutions provides hygiene, cleaning and pest control services.">
-  <title>FreshSpace Hygiene & Pest Solutions</title>
+
+  <title>Gallery | FreshSpace Hygiene & Pest Solutions</title>
 
   <style>
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
     }
 
     body {
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: Arial, sans-serif;
       line-height: 1.6;
       color: #26352c;
-      background: #ffffff;
     }
 
     header {
-      background: #ffffff;
-      padding: 15px 6%;
+      padding: 18px 6%;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 20px;
+      gap: 15px;
       flex-wrap: wrap;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      box-shadow: 0 2px 8px #ddd;
     }
 
     .brand {
@@ -43,235 +37,133 @@
       text-decoration: none;
     }
 
-    .brand span {
-      display: block;
-      color: #65756a;
-      font-size: 11px;
-      letter-spacing: 1px;
-    }
-
     nav {
       display: flex;
-      align-items: center;
-      gap: 22px;
       flex-wrap: wrap;
+      gap: 18px;
     }
 
     nav a {
-      text-decoration: none;
       color: #26352c;
+      text-decoration: none;
       font-weight: bold;
       font-size: 14px;
     }
 
     nav a:hover {
-      color: #188653;
+      color: #20a464;
     }
 
     .hero {
-      min-height: 520px;
-      padding: 75px 7%;
-      display: flex;
-      align-items: center;
-      background:
-        linear-gradient(90deg, rgba(7,48,29,0.92), rgba(7,48,29,0.48)),
-        url("WhatsApp Image 2026-10-10 at 16.12.44.jpeg")
-        center/cover no-repeat;
+      background: #176b45;
       color: white;
-    }
-
-    .hero-content {
-      max-width: 680px;
+      padding: 55px 7%;
+      text-align: center;
     }
 
     .hero h1 {
-      font-size: clamp(34px, 5vw, 55px);
-      line-height: 1.15;
-      margin-bottom: 20px;
+      font-size: 38px;
+      margin-bottom: 10px;
     }
 
-    .hero p {
-      font-size: 18px;
-      margin-bottom: 28px;
-    }
-
-    .buttons {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 13px 23px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .btn-primary {
-      background: #20a464;
-      color: white;
-    }
-
-    .btn-light {
-      background: white;
-      color: #176b45;
-    }
-
-    section {
-      padding: 65px 7%;
-    }
-
-    .section-heading {
-      text-align: center;
-      max-width: 720px;
-      margin: 0 auto 35px;
-    }
-
-    .section-heading h2 {
-      color: #176b45;
-      font-size: 32px;
-      margin-bottom: 12px;
+    main {
+      max-width: 1250px;
+      margin: auto;
+      padding: 45px 6%;
     }
 
     .intro {
       text-align: center;
-      background: #f3f8f4;
+      margin-bottom: 30px;
     }
 
-    .intro p {
-      max-width: 850px;
-      margin: auto;
-    }
-
-    .services {
+    .gallery {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 25px;
+      gap: 20px;
     }
 
-    .service-card {
-      background: white;
-      border-radius: 10px;
+    .gallery figure {
       overflow: hidden;
-      box-shadow: 0 4px 18px rgba(0,0,0,0.09);
+      border-radius: 9px;
+      background: #f2f8f4;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.09);
     }
 
-    .service-card img {
+    .gallery img {
       display: block;
       width: 100%;
-      height: 220px;
+      height: 250px;
       object-fit: cover;
+      transition: transform 0.3s ease;
     }
 
-    .service-card div {
-      padding: 22px;
+    .gallery img:hover {
+      transform: scale(1.04);
     }
 
-    .service-card h3 {
-      color: #176b45;
-      margin-bottom: 10px;
-    }
-
-    .why-us {
-      background: #f3f8f4;
-    }
-
-    .benefits {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 25px;
+    .gallery figcaption {
+      padding: 12px;
       text-align: center;
-    }
-
-    .benefit {
-      background: white;
-      padding: 25px;
-      border-radius: 8px;
-    }
-
-    .benefit h3 {
       color: #176b45;
-      margin-bottom: 8px;
+      font-weight: bold;
     }
 
     .cta {
-      background: #176b45;
-      color: white;
+      background: #eaf5ed;
+      padding: 35px 6%;
       text-align: center;
     }
 
     .cta h2 {
-      font-size: 30px;
-      margin-bottom: 12px;
+      color: #176b45;
+      margin-bottom: 10px;
     }
 
-    .cta p {
-      margin-bottom: 22px;
+    .cta a {
+      display: inline-block;
+      margin: 12px 5px 0;
+      padding: 12px 20px;
+      background: #176b45;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     footer {
       background: #103d29;
       color: white;
       text-align: center;
-      padding: 25px 7%;
-    }
-
-    footer a {
-      color: white;
-      text-decoration: none;
-    }
-
-    .contact-links {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin: 12px 0;
+      padding: 22px;
     }
 
     @media (max-width: 800px) {
+      .gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 550px) {
       header {
         flex-direction: column;
       }
 
       nav {
         justify-content: center;
-        gap: 15px;
-      }
-
-      .services,
-      .benefits {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .hero {
-        min-height: 450px;
-        padding: 55px 6%;
-      }
-    }
-
-    @media (max-width: 550px) {
-      .services,
-      .benefits {
-        grid-template-columns: 1fr;
-      }
-
-      nav {
         gap: 12px;
       }
 
-      nav a {
-        font-size: 13px;
+      .hero h1 {
+        font-size: 30px;
       }
 
-      section {
-        padding: 45px 6%;
+      .gallery {
+        grid-template-columns: 1fr;
       }
 
-      .hero p {
-        font-size: 16px;
+      .gallery img {
+        height: 240px;
       }
     }
   </style>
@@ -280,141 +172,138 @@
 <body>
 
   <header>
-    <a class="brand" href="index.html">
-      FreshSpace
-      <span>HYGIENE &amp; PEST SOLUTIONS</span>
-    </a>
+    <a class="brand" href="index.html">FreshSpace</a>
 
     <nav aria-label="Main navigation">
       <a href="index.html">Home</a>
       <a href="about-us.html">About Us</a>
       <a href="our-services.html">Our Services</a>
+      <a href="gallery.html">Gallery</a>
       <a href="contact-us.html">Contact Us</a>
     </nav>
   </header>
 
+  <section class="hero">
+    <h1>Our Gallery</h1>
+    <p>A look at FreshSpace Hygiene &amp; Pest Solutions.</p>
+  </section>
+
   <main>
-    <section class="hero">
-      <div class="hero-content">
-        <h1>A Cleaner Space. A Healthier Environment.</h1>
-        <p>
-          Professional hygiene, cleaning and pest solutions
-          for homes, offices and businesses.
-        </p>
-
-        <div class="buttons">
-          <a class="btn btn-primary"
-             href="our-services.html">Explore Our Services</a>
-
-          <a class="btn btn-light"
-             href="https://wa.me/254181189836">WhatsApp Us</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="intro">
-      <div class="section-heading">
-        <h2>Welcome to FreshSpace</h2>
-      </div>
-      <p>
-        FreshSpace Hygiene &amp; Pest Solutions is committed to
-        helping create cleaner, safer and healthier spaces through
-        dependable hygiene and pest management solutions. We aim to
-        deliver professional service with care, quality and attention
-        to detail.
-      </p>
-    </section>
-
-    <section>
-      <div class="section-heading">
-        <h2>What We Offer</h2>
-        <p>Practical solutions to keep your environment clean and protected.</p>
-      </div>
-
-      <div class="services">
-        <article class="service-card">
-          <img
-            src="WhatsApp Image 2026-10-10 at 12.04.17.jpg"
-            alt="Cleaning and hygiene services">
-          <div>
-            <h3>Cleaning Services</h3>
-            <p>Cleaning solutions for residential, commercial and working spaces.</p>
-          </div>
-        </article>
-
-        <article class="service-card">
-          <img
-            src="WhatsApp Image 2026-10-10 at 16.12.49.jpeg"
-            alt="Pest control service">
-          <div>
-            <h3>Pest Control</h3>
-            <p>Solutions to help manage unwanted pests and maintain hygienic spaces.</p>
-          </div>
-        </article>
-
-        <article class="service-card">
-          <img
-            src="WhatsApp Image 2026-10-10 at 16.13.02.jpeg"
-            alt="Professional hygiene solutions">
-          <div>
-            <h3>Hygiene Solutions</h3>
-            <p>Hygiene-focused services tailored to the needs of homes and businesses.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="why-us">
-      <div class="section-heading">
-        <h2>Why Choose FreshSpace?</h2>
-        <p>We focus on service quality and a cleaner environment.</p>
-      </div>
-
-      <div class="benefits">
-        <div class="benefit">
-          <h3>Reliable Service</h3>
-          <p>We aim to provide dependable service that respects your time and space.</p>
-        </div>
-
-        <div class="benefit">
-          <h3>Professional Care</h3>
-          <p>We approach every job with care, attention and professionalism.</p>
-        </div>
-
-        <div class="benefit">
-          <h3>Customer Focus</h3>
-          <p>We listen to your needs and work towards practical solutions.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta">
-      <h2>Ready for a Fresher Space?</h2>
-      <p>Contact FreshSpace Hygiene &amp; Pest Solutions to discuss your needs.</p>
-
-      <div class="buttons" style="justify-content:center;">
-        <a class="btn btn-light" href="tel:+254181189836">
-          Call Us
-        </a>
-
-        <a class="btn btn-primary"
-           href="https://wa.me/254181189836">
-          Chat on WhatsApp
-        </a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <strong>FreshSpace Hygiene &amp; Pest Solutions</strong>
-
-    <div class="contact-links">
-      <a href="tel:+254181189836">Phone Us</a>
-      <a href="https://wa.me/254181189836">WhatsApp</a>
-      <a href="contact-us.html">Contact Us</a>
+    <div class="intro">
+      <h2>Our Work in Pictures</h2>
+      <p>Explore our photos showcasing hygiene, cleaning and pest solutions.</p>
     </div>
 
-    <p>&copy; 2026 FreshSpace Hygiene &amp; Pest Solutions. All rights reserved.</p>
+    <div class="gallery">
+
+      <figure>
+        <img src="WhatsApp Image 2026-10-10 at 12.04.17.jpg"
+             alt="Cleaning service" loading="lazy">
+        <figcaption>Cleaning Services</figcaption>
+      </figure>
+
+      <figure>
+        <img src="WhatsApp Image 2026-10-10 at 12.05.28 (1).jpg"
+             alt="Hygiene services" loading="lazy">
+        <figcaption>Hygiene Solutions</figcaption>
+      </figure>
+
+      <figure>
+        <img src="WhatsApp Image 2026-10-10 at 12.05.28.jpg"
+             alt="Professional cleaning" loading="lazy">
+        <figcaption>Professional Cleaning</figcaption>
+      </figure>
+
+      <figure>
+        <img src="WhatsApp Image 2026-10-10 at 16.12.44.jpeg"
+             alt="FreshSpace service photo" loading="lazy">
+        <figcaption>Our Work</figcaption>
+      </figure>
+
+      <figure>
+        <img src="WhatsApp Image 2026-10-10 at 16.12.49.jpeg"
+             alt="Pest management service" loading="lazy">
+        <figcaption>Pest Management</figcaption>
+      </figure>
+
+      <figure>
+        <img src="WhatsApp Image 2026-10-10 at 16.13.02.jpeg"
+             alt="Hygiene solutions" loading="lazy">
+        <figcaption>Hygiene Care</figcaption>
+      </figure>
+
+      <figure>
+        <img src="WhatsApp Image 2026-10-10 at 16.13.13.jpeg"
+             alt="FreshSpace work photo" loading="lazy">
+        <figcaption>Service Showcase</figcaption>
+      </figure>
+
+      <figure>
+        <img src="WhatsApp Image 2026-10-10 at 16.13.15.jpeg"
+             alt="Cleaning and hygiene" loading="lazy">
+        <figcaption>Clean Environments</figcaption>
+      </figure>
+
+      <figure>
+        <img src="WhatsApp Image 2026-10-10 at 16.13.16.jpeg"
+             alt="FreshSpace project photo" loading="lazy">
+        <figcaption>Our Projects</figcaption>
+      </figure>
+
+      <figure>
+        <img src="WhatsApp Image 2026-10-10 at 20.51.48 (1).jpeg"
+             alt="FreshSpace service work" loading="lazy">
+        <figcaption>Our Services</figcaption>
+      </figure>
+
+      <figure>
+        <img src="WhatsApp Image 2026-10-10 at 20.51.48.jpeg"
+             alt="FreshSpace hygiene work" loading="lazy">
+        <figcaption>Quality Care</figcaption>
+      </figure>
+
+      <figure>
+        <img src="WhatsApp Image 2026-10-11 at 15.03.42 (1).jpg"
+             alt="FreshSpace project" loading="lazy">
+        <figcaption>Project Gallery</figcaption>
+      </figure>
+
+      <figure>
+        <img src="WhatsApp Image 2026-10-11 at 15.03.42 (2).jpg"
+             alt="FreshSpace service photo" loading="lazy">
+        <figcaption>Our Work</figcaption>
+      </figure>
+
+      <figure>
+        <img src="WhatsApp Image 2026-10-11 at 15.10.22.jpg"
+             alt="FreshSpace service photo" loading="lazy">
+        <figcaption>Service Excellence</figcaption>
+      </figure>
+
+      <figure>
+        <img src="WhatsApp Image 2026-10-11 at 15.38.43 (1).jpg"
+             alt="FreshSpace project photo" loading="lazy">
+        <figcaption>Our Projects</figcaption>
+      </figure>
+
+      <figure>
+        <img src="WhatsApp Image 2026-10-11 at 15.38.43.jpg"
+             alt="FreshSpace hygiene service" loading="lazy">
+        <figcaption>FreshSpace in Action</figcaption>
+      </figure>
+
+    </div>
+  </main>
+
+  <section class="cta">
+    <h2>Need Our Services?</h2>
+    <p>Contact us to discuss your cleaning or pest management needs.</p>
+    <a href="tel:+254181189836">Call Us</a>
+    <a href="https://wa.me/254181189836">WhatsApp Us</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 FreshSpace Hygiene &amp; Pest Solutions</p>
   </footer>
 
 </body>
