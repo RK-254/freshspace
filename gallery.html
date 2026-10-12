@@ -1,1 +1,311 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Gallery | FreshSpace Hygiene & Pest Solutions</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #26352c;
+    }
+
+    header {
+      padding: 18px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 8px #ddd;
+    }
+
+    .brand {
+      color: #176b45;
+      font-size: 21px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    nav a {
+      color: #26352c;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #20a464;
+    }
+
+    .hero {
+      background: #176b45;
+      color: white;
+      padding: 55px 7%;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    main {
+      max-width: 1250px;
+      margin: auto;
+      padding: 45px 6%;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .gallery figure {
+      overflow: hidden;
+      border-radius: 9px;
+      background: #f2f8f4;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.09);
+    }
+
+    .gallery img {
+      display: block;
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.04);
+    }
+
+    .gallery figcaption {
+      padding: 12px;
+      text-align: center;
+      color: #176b45;
+      font-weight: bold;
+    }
+
+    .cta {
+      background: #eaf5ed;
+      padding: 35px 6%;
+      text-align: center;
+    }
+
+    .cta h2 {
+      color: #176b45;
+      margin-bottom: 10px;
+    }
+
+    .cta a {
+      display: inline-block;
+      margin: 12px 5px 0;
+      padding: 12px 20px;
+      background: #176b45;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #103d29;
+      color: white;
+      text-align: center;
+      padding: 22px;
+    }
+
+    @media (max-width: 800px) {
+      .gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 550px) {
+      header {
+        flex-direction: column;
+      }
+
+      nav {
+        justify-content: center;
+        gap: 12px;
+      }
+
+      .hero h1 {
+        font-size: 30px;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery img {
+        height: 240px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a class="brand" href="index.html">FreshSpace</a>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about-us.html">About Us</a>
+      <a href="our-services.html">Our Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact-us.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Our Gallery</h1>
+    <p>A look at FreshSpace Hygiene &amp; Pest Solutions.</p>
+  </section>
+
+  <main>
+    <div class="intro">
+      <h2>Our Work in Pictures</h2>
+      <p>Explore our photos showcasing hygiene, cleaning and pest solutions.</p>
+    </div>
+
+    <div class="gallery">
+
+      <figure>
+        <img src="WhatsApp Image 2026-10-10 at 12.04.17.jpg"
+             alt="Cleaning service" loading="lazy">
+        <figcaption>Cleaning Services</figcaption>
+      </figure>
+
+      <figure>
+        <img src="WhatsApp Image 2026-10-10 at 12.05.28 (1).jpg"
+             alt="Hygiene services" loading="lazy">
+        <figcaption>Hygiene Solutions</figcaption>
+      </figure>
+
+      <figure>
+        <img src="WhatsApp Image 2026-10-10 at 12.05.28.jpg"
+             alt="Professional cleaning" loading="lazy">
+        <figcaption>Professional Cleaning</figcaption>
+      </figure>
+
+      <figure>
+        <img src="WhatsApp Image 2026-10-10 at 16.12.44.jpeg"
+             alt="FreshSpace service photo" loading="lazy">
+        <figcaption>Our Work</figcaption>
+      </figure>
+
+      <figure>
+        <img src="WhatsApp Image 2026-10-10 at 16.12.49.jpeg"
+             alt="Pest management service" loading="lazy">
+        <figcaption>Pest Management</figcaption>
+      </figure>
+
+      <figure>
+        <img src="WhatsApp Image 2026-10-10 at 16.13.02.jpeg"
+             alt="Hygiene solutions" loading="lazy">
+        <figcaption>Hygiene Care</figcaption>
+      </figure>
+
+      <figure>
+        <img src="WhatsApp Image 2026-10-10 at 16.13.13.jpeg"
+             alt="FreshSpace work photo" loading="lazy">
+        <figcaption>Service Showcase</figcaption>
+      </figure>
+
+      <figure>
+        <img src="WhatsApp Image 2026-10-10 at 16.13.15.jpeg"
+             alt="Cleaning and hygiene" loading="lazy">
+        <figcaption>Clean Environments</figcaption>
+      </figure>
+
+      <figure>
+        <img src="WhatsApp Image 2026-10-10 at 16.13.16.jpeg"
+             alt="FreshSpace project photo" loading="lazy">
+        <figcaption>Our Projects</figcaption>
+      </figure>
+
+      <figure>
+        <img src="WhatsApp Image 2026-10-10 at 20.51.48 (1).jpeg"
+             alt="FreshSpace service work" loading="lazy">
+        <figcaption>Our Services</figcaption>
+      </figure>
+
+      <figure>
+        <img src="WhatsApp Image 2026-10-10 at 20.51.48.jpeg"
+             alt="FreshSpace hygiene work" loading="lazy">
+        <figcaption>Quality Care</figcaption>
+      </figure>
+
+      <figure>
+        <img src="WhatsApp Image 2026-10-11 at 15.03.42 (1).jpg"
+             alt="FreshSpace project" loading="lazy">
+        <figcaption>Project Gallery</figcaption>
+      </figure>
+
+      <figure>
+        <img src="WhatsApp Image 2026-10-11 at 15.03.42 (2).jpg"
+             alt="FreshSpace service photo" loading="lazy">
+        <figcaption>Our Work</figcaption>
+      </figure>
+
+      <figure>
+        <img src="WhatsApp Image 2026-10-11 at 15.10.22.jpg"
+             alt="FreshSpace service photo" loading="lazy">
+        <figcaption>Service Excellence</figcaption>
+      </figure>
+
+      <figure>
+        <img src="WhatsApp Image 2026-10-11 at 15.38.43 (1).jpg"
+             alt="FreshSpace project photo" loading="lazy">
+        <figcaption>Our Projects</figcaption>
+      </figure>
+
+      <figure>
+        <img src="WhatsApp Image 2026-10-11 at 15.38.43.jpg"
+             alt="FreshSpace hygiene service" loading="lazy">
+        <figcaption>FreshSpace in Action</figcaption>
+      </figure>
+
+    </div>
+  </main>
+
+  <section class="cta">
+    <h2>Need Our Services?</h2>
+    <p>Contact us to discuss your cleaning or pest management needs.</p>
+    <a href="tel:+254181189836">Call Us</a>
+    <a href="https://wa.me/254181189836">WhatsApp Us</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 FreshSpace Hygiene &amp; Pest Solutions</p>
+  </footer>
+
+</body>
+</html>
+```
