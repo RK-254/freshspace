@@ -4,187 +4,508 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FreshSpace Hygiene &amp; Pest Solutions | Home</title>
-  <meta name="description" content="FreshSpace Hygiene & Pest Solutions provides cleaning, hygiene and pest-control services for homes and businesses.">
-  <link rel="icon" type="image/jpeg" href="WhatsApp%20Image%202026-10-10%20at%2020.51.48.jpeg">
-  <link rel="stylesheet" href="style.css">
+
+  <title>Contact Us & Get a Quote | FreshSpace Hygiene & Pest Solutions</title>
+  <meta name="description" content="Contact FreshSpace Hygiene & Pest Solutions for carpet cleaning, sofa cleaning, general cleaning and pest control. Request a quote through WhatsApp.">
+
+  <link rel="icon" href="WhatsApp%20Image%202026-10-10%20at%2020.51.48.jpeg">
+
+  <style>
+    :root {
+      --green: #176b45;
+      --dark-green: #104d32;
+      --light-green: #e9f5ed;
+      --white: #ffffff;
+      --text: #26372d;
+      --muted: #617067;
+      --border: #dce8df;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: #f8fbf8;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .site-header {
+      background: white;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .header-inner {
+      max-width: 1200px;
+      margin: auto;
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--green);
+      font-size: 17px;
+      font-weight: 800;
+      line-height: 1.3;
+    }
+
+    .brand img {
+      width: 62px;
+      height: 62px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+
+    .brand span {
+      max-width: 245px;
+    }
+
+    .main-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 5px;
+    }
+
+    .main-nav a {
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 700;
+      padding: 10px 12px;
+      border-radius: 6px;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      color: white;
+      background: var(--green);
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #eaf6ed, #d6ebdc);
+      text-align: center;
+      padding: 52px 20px;
+    }
+
+    .hero h1 {
+      color: var(--dark-green);
+      font-size: clamp(32px, 5vw, 46px);
+      line-height: 1.2;
+      margin: 0 0 14px;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: auto;
+      color: #43594a;
+      font-size: 17px;
+    }
+
+    main {
+      max-width: 1150px;
+      margin: 42px auto;
+      padding: 0 22px;
+    }
+
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .contact-info,
+    .quote-form {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      padding: 28px;
+      box-shadow: 0 5px 20px rgba(22, 75, 46, 0.06);
+    }
+
+    h2 {
+      color: var(--dark-green);
+      font-size: 27px;
+      line-height: 1.3;
+      margin: 0 0 14px;
+    }
+
+    .contact-info p,
+    .quote-form > p {
+      color: var(--muted);
+      margin: 0 0 18px;
+    }
+
+    .contact-detail {
+      padding: 15px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .contact-detail strong {
+      color: var(--green);
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .contact-detail a {
+      color: var(--text);
+      overflow-wrap: anywhere;
+    }
+
+    .contact-button {
+      display: block;
+      width: 100%;
+      padding: 13px 15px;
+      text-align: center;
+      border-radius: 7px;
+      font-weight: 800;
+      margin-top: 14px;
+    }
+
+    .call-button {
+      background: var(--green);
+      color: white;
+    }
+
+    .whatsapp-button {
+      background: #168b50;
+      color: white;
+    }
+
+    form label {
+      display: block;
+      margin: 16px 0 6px;
+      color: var(--text);
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    form input,
+    form select,
+    form textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #cbd8ce;
+      border-radius: 6px;
+      font: inherit;
+      color: var(--text);
+      background: white;
+    }
+
+    form input:focus,
+    form select:focus,
+    form textarea:focus {
+      outline: 2px solid #70b58b;
+      border-color: var(--green);
+    }
+
+    form textarea {
+      resize: vertical;
+    }
+
+    .submit-button {
+      width: 100%;
+      border: 0;
+      border-radius: 7px;
+      background: var(--green);
+      color: white;
+      font-size: 16px;
+      font-weight: 800;
+      padding: 14px;
+      margin-top: 22px;
+      cursor: pointer;
+    }
+
+    .submit-button:hover {
+      background: var(--dark-green);
+    }
+
+    .small-note {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 12px;
+    }
+
+    .site-footer {
+      background: #103d29;
+      color: white;
+      text-align: center;
+      padding: 28px 20px;
+      margin-top: 50px;
+    }
+
+    .site-footer p {
+      margin: 5px 0;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin: 15px 0;
+    }
+
+    .footer-links a {
+      color: #e3f3e8;
+      font-size: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .header-inner {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .main-nav {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .header-inner {
+        padding: 14px 12px;
+      }
+
+      .brand {
+        justify-content: center;
+        text-align: center;
+        font-size: 15px;
+      }
+
+      .brand img {
+        width: 52px;
+        height: 52px;
+      }
+
+      .main-nav {
+        justify-content: center;
+        gap: 4px;
+      }
+
+      .main-nav a {
+        font-size: 11px;
+        padding: 9px 8px;
+      }
+
+      .hero {
+        padding: 40px 18px;
+      }
+
+      main {
+        margin: 28px auto;
+        padding: 0 15px;
+      }
+
+      .contact-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-info,
+      .quote-form {
+        padding: 22px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
 <header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html">
-      <img src="WhatsApp%20Image%202026-10-10%20at%2020.51.48%20(1).jpeg" alt="FreshSpace logo">
-      <span>FreshSpace Hygiene<br>&amp; Pest Solutions</span>
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="FreshSpace home">
+      <img
+        src="WhatsApp%20Image%202026-10-10%20at%2020.51.48%20(1).jpeg"
+        alt="FreshSpace logo">
+      <span>FreshSpace Hygiene & Pest Solutions</span>
     </a>
 
-    <nav aria-label="Main navigation">
-      <a class="active" href="index.html">Home</a>
-      <a href="about-us.html">About Us</a>
-      <a href="our-services.html">Our Services</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact-us.html">Contact Us</a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">HOME</a>
+      <a href="about-us.html">ABOUT US</a>
+      <a href="our-services.html">OUR SERVICES</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="contact-us.html" class="active">CONTACT US</a>
     </nav>
   </div>
 </header>
 
+<section class="hero">
+  <h1>Contact Us</h1>
+  <p>
+    Looking for cleaning or pest control services?
+    Tell us what you need and request a quote from FreshSpace
+    Hygiene & Pest Solutions.
+  </p>
+</section>
+
 <main>
+  <div class="contact-layout">
 
-  <section class="hero">
-    <div class="container hero-content">
-      <p class="eyebrow">Clean spaces. Healthier living.</p>
-      <h1>A Cleaner, Healthier Space Starts Here</h1>
+    <section class="contact-info">
+      <h2>Let's Talk</h2>
+
       <p>
-        FreshSpace Hygiene &amp; Pest Solutions helps homes and businesses
-        maintain cleaner, more comfortable and hygienic environments.
+        We welcome enquiries from homes, offices and institutions.
+        Contact us to discuss the service you need.
       </p>
 
-      <div class="button-row">
-        <a class="btn btn-primary" href="contact-us.html">Get a Quote</a>
-        <a class="btn btn-outline"
-           href="https://wa.me/254181189836?text=Hello%20FreshSpace%2C%20I%20would%20like%20to%20request%20a%20quote."
-           target="_blank" rel="noopener">WhatsApp Us</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="section-heading">
-        <h2>What We Offer</h2>
-        <p>
-          Practical hygiene and pest-solution services tailored to your
-          space and needs.
-        </p>
+      <div class="contact-detail">
+        <strong>Phone</strong>
+        <a href="tel:+254181189836">+254 181 189836</a>
       </div>
 
-      <div class="grid">
-        <article class="card">
-          <img src="WhatsApp%20Image%202026-10-10%20at%2012.04.17.jpg"
-               alt="Cleaning service">
-          <div class="card-content">
-            <h3>Cleaning Services</h3>
-            <p>
-              Cleaning support for homes and workplaces to help maintain
-              neat, comfortable and welcoming environments.
-            </p>
-            <a href="our-services.html">Explore cleaning services &rarr;</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="WhatsApp%20Image%202026-10-10%20at%2016.12.49.jpeg"
-               alt="Pest control service">
-          <div class="card-content">
-            <h3>Pest Control</h3>
-            <p>
-              Pest-management solutions to help address unwanted pests
-              in residential and commercial spaces.
-            </p>
-            <a href="our-services.html">Explore pest control &rarr;</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="WhatsApp%20Image%202026-10-10%20at%2016.13.02.jpeg"
-               alt="Hygiene service">
-          <div class="card-content">
-            <h3>Hygiene Solutions</h3>
-            <p>
-              Hygiene-focused services to support cleaner and healthier
-              surroundings.
-            </p>
-            <a href="our-services.html">Explore our services &rarr;</a>
-          </div>
-        </article>
+      <div class="contact-detail">
+        <strong>WhatsApp</strong>
+        <a href="https://wa.me/254181189836"
+           target="_blank"
+           rel="noopener noreferrer">Chat with FreshSpace</a>
       </div>
 
-      <div class="button-row" style="justify-content:center">
-        <a class="btn btn-green" href="our-services.html">View All Services</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section-light">
-    <div class="container two-column">
-      <div>
-        <p class="eyebrow">Why FreshSpace?</p>
-        <h2>Service Focused on Your Needs</h2>
-        <p>
-          We aim to help customers maintain cleaner spaces through
-          practical hygiene and pest-solution services.
-        </p>
-
-        <ul class="check-list">
-          <li>Services for homes and businesses</li>
-          <li>Clear communication and enquiries</li>
-          <li>Solutions tailored to your requirements</li>
-          <li>Convenient phone and WhatsApp contact</li>
-        </ul>
-
-        <a class="btn btn-green" href="about-us.html">Learn About Us</a>
+      <div class="contact-detail">
+        <strong>Services</strong>
+        Carpet cleaning, sofa cleaning, general cleaning,
+        office cleaning and pest control.
       </div>
 
-      <div>
-        <img class="feature-image"
-             src="WhatsApp%20Image%202026-10-11%20at%2015.38.43.jpg"
-             alt="FreshSpace company van">
-      </div>
-    </div>
-  </section>
+      <a class="contact-button call-button" href="tel:+254181189836">
+        Call FreshSpace
+      </a>
 
-  <section class="section">
-    <div class="container two-column">
-      <div>
-        <img class="feature-image"
-             src="WhatsApp%20Image%202026-10-11%20at%2015.38.43%20(1).jpg"
-             alt="FreshSpace office">
-      </div>
+      <a class="contact-button whatsapp-button"
+         href="https://wa.me/254181189836?text=Hello%20FreshSpace%2C%20I%20would%20like%20to%20enquire%20about%20your%20services."
+         target="_blank"
+         rel="noopener noreferrer">
+        Chat on WhatsApp
+      </a>
+    </section>
 
-      <div>
-        <p class="eyebrow">Discover FreshSpace</p>
-        <h2>Get to Know Our Company</h2>
-        <p>
-          Learn more about FreshSpace, our commitment to service and
-          the hygiene solutions we offer.
-        </p>
-        <a class="btn btn-green" href="about-us.html">About Us</a>
-        <a class="btn btn-green" href="gallery.html">View Gallery</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta">
-    <div class="container">
-      <h2>Ready to Request a Quote?</h2>
+    <section class="quote-form">
+      <h2>Request a Free Quote</h2>
       <p>
-        Tell us what service you need and let us discuss the next steps.
+        Complete the form below. WhatsApp will open with your
+        information prepared as a message to our business.
       </p>
 
-      <div class="button-row" style="justify-content:center">
-        <a class="btn btn-primary" href="contact-us.html">Get a Quote</a>
-        <a class="btn btn-outline"
-           href="https://wa.me/254181189836?text=Hello%20FreshSpace%2C%20I%20would%20like%20to%20request%20a%20quote."
-           target="_blank" rel="noopener">WhatsApp Us</a>
-        <a class="btn btn-outline" href="tel:+254181189836">Call Us</a>
-      </div>
-    </div>
-  </section>
+      <form id="quoteForm">
+        <label for="name">Full Name *</label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          autocomplete="name"
+          placeholder="Enter your full name"
+          required>
 
+        <label for="phone">Your Phone Number *</label>
+        <input
+          id="phone"
+          name="phone"
+          type="tel"
+          autocomplete="tel"
+          placeholder="Enter your phone number"
+          required>
+
+        <label for="service">Service Needed *</label>
+        <select id="service" name="service" required>
+          <option value="">Choose a service</option>
+          <option value="Carpet Cleaning">Carpet Cleaning</option>
+          <option value="Sofa Cleaning">Sofa Cleaning</option>
+          <option value="General Home Cleaning">General Home Cleaning</option>
+          <option value="Office Cleaning">Office Cleaning</option>
+          <option value="Pest Control">Pest Control</option>
+          <option value="Institutional Cleaning">Institutional Cleaning</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label for="location">Service Location *</label>
+        <input
+          id="location"
+          name="location"
+          type="text"
+          autocomplete="address-level2"
+          placeholder="Enter your town or estate"
+          required>
+
+        <label for="details">Additional Details</label>
+        <textarea
+          id="details"
+          name="details"
+          rows="5"
+          placeholder="Describe the work you need, for example the number of carpets, sofas or the pest problem."></textarea>
+
+        <button class="submit-button" type="submit">
+          Send Quote Request on WhatsApp
+        </button>
+
+        <p class="small-note">
+          Your WhatsApp message will not be sent automatically.
+          Review the details in WhatsApp and press Send to submit
+          your request to FreshSpace.
+        </p>
+      </form>
+    </section>
+
+  </div>
 </main>
 
 <footer class="site-footer">
-  <div class="container">
-    <p><strong>FreshSpace Hygiene &amp; Pest Solutions</strong></p>
-    <p>Cleaner spaces. Better living.</p>
-    <p>
-      <a href="tel:+254181189836">Call Us</a> |
-      <a href="https://wa.me/254181189836">WhatsApp</a> |
-      <a href="contact-us.html">Get a Quote</a>
-    </p>
-    <p>&copy; 2026 FreshSpace Hygiene &amp; Pest Solutions. All rights reserved.</p>
+  <p><strong>FreshSpace Hygiene & Pest Solutions</strong></p>
+  <p>Clean Spaces. Healthy Living.</p>
+
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="about-us.html">About Us</a>
+    <a href="our-services.html">Our Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact-us.html">Contact Us</a>
   </div>
+
+  <p>
+    Phone / WhatsApp:
+    <a href="tel:+254181189836" style="color:white;">+254 181 189836</a>
+  </p>
+  <p>&copy; 2026 FreshSpace Hygiene & Pest Solutions. All rights reserved.</p>
 </footer>
+
+<script>
+  document.getElementById("quoteForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const service = document.getElementById("service").value;
+    const location = document.getElementById("location").value.trim();
+    const details = document.getElementById("details").value.trim();
+
+    const message =
+      "Hello FreshSpace Hygiene & Pest Solutions. I would like to request a quote.\n\n" +
+      "Full Name: " + name + "\n" +
+      "Phone Number: " + phone + "\n" +
+      "Service Needed: " + service + "\n" +
+      "Service Location: " + location + "\n" +
+      "Additional Details: " + (details || "Not provided");
+
+    const whatsappURL =
+      "https://wa.me/254181189836?text=" +
+      encodeURIComponent(message);
+
+    window.open(whatsappURL, "_blank", "noopener,noreferrer");
+  });
+</script>
 
 </body>
 </html>
