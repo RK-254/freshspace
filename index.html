@@ -7,12 +7,9 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Segoe UI',Arial,sans-serif;line-height:1.6;color:#222;background:#fff}
-header{background:#fff;padding:0 5%;display:flex;justify-content:space-between;align-items:center;box-shadow:0 3px 18px rgba(0,0,0,0.1);position:sticky;top:0;z-index:100;height:80px}
-.logo-area{display:flex;align-items:center;gap:12px}
-.logo-area img{height:60px;width:60px;object-fit:contain;border-radius:8px}
-.logo-text{font-size:28px;font-weight:900;color:#0a5c2d;line-height:1}
-.logo-text span{color:#2f9e44}
-.logo-text small{display:block;font-size:11px;font-weight:600;color:#666;letter-spacing:1px}
+header{background:#fff;padding:0 5%;display:flex;justify-content:space-between;align-items:center;box-shadow:0 3px 18px rgba(0,0,0,0.1);position:sticky;top:0;z-index:100;height:85px}
+.logo-area{display:flex;align-items:center}
+.logo-area img{height:78px;width:78px;object-fit:contain;border-radius:10px}
 .nav-tabs{display:flex;align-items:center;gap:5px}
 .nav-tabs a{padding:12px 18px;text-decoration:none;color:#333;font-weight:700;font-size:17px;border-radius:8px;transition:0.2s}
 .nav-tabs a:hover{background:#e8f5e9;color:#0a5c2d}
@@ -32,7 +29,7 @@ header{background:#fff;padding:0 5%;display:flex;justify-content:space-between;a
 .team-section{padding:50px 5%;display:flex;flex-wrap:wrap;gap:40px;align-items:center;background:#fff}
 .footer{background:#0a5c2d;color:#fff;text-align:center;padding:30px}
 .whatsapp-float{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:14px 22px;border-radius:50px;text-decoration:none;font-weight:800;box-shadow:0 4px 15px rgba(0,0,0,0.25)}
-@media(max-width:900px){header{height:auto;padding:12px 5%;flex-wrap:wrap}.nav-tabs{width:100%;justify-content:center;margin-top:10px;flex-wrap:wrap}.nav-tabs a{font-size:15px;padding:10px 12px}.hero h1{font-size:32px}}
+@media(max-width:900px){header{height:auto;padding:12px 5%;flex-wrap:wrap}.logo-area img{height:65px;width:65px}.nav-tabs{width:100%;justify-content:center;margin-top:10px;flex-wrap:wrap}.nav-tabs a{font-size:15px;padding:10px 12px}.hero h1{font-size:32px}}
 </style>
 </head>
 <body>
@@ -40,7 +37,6 @@ header{background:#fff;padding:0 5%;display:flex;justify-content:space-between;a
 <header>
 <div class="logo-area">
 <img src="images/logo.jpeg" alt="FreshSpace Logo">
-<div class="logo-text">Fresh<span>Space</span><small>CLEANING & PEST CONTROL</small></div>
 </div>
 <div class="nav-tabs">
 <a href="#home" class="active">Home</a>
@@ -104,7 +100,6 @@ FreshSpace Cleaning & Pest Control provides professional, reliable services acro
 </div>
 <p style="margin-top:25px;text-align:center;font-weight:800;color:#0a5c2d;font-size:20px">📞 Call Now: +254 181 189836 | 💬 WhatsApp 7 Days | Nairobi</p>
 </div>
-
 </section>
 
 <section class="team-section" id="about">
