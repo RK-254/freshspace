@@ -1,339 +1,276 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FreshSpace Hygiene &amp; Pest Solutions | Home</title>
-  <meta name="description" content="FreshSpace Hygiene & Pest Solutions provides cleaning, hygiene and pest-control services for homes and businesses.">
-  <link rel="icon" type="image/jpeg" href="WhatsApp%20Image%202026-10-10%20at%2020.51.48.jpeg">
-  <link rel="stylesheet" href="style.css">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>FreshSpace Hygiene &amp; Pest Solutions</title>
-<meta name="description" content="Cleaning, hygiene and pest-control services for homes and businesses.">
-
-<link rel="icon" href="images/Team.jpeg">
-
-<style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#25352b;line-height:1.7}
-a{text-decoration:none}
-header{background:#fff;box-shadow:0 2px 10px #00000012}
-.header{max-width:1150px;margin:auto;padding:12px 20px;display:flex;justify-content:space-between;align-items:center;gap:20px}
-.brand{display:flex;align-items:center;gap:12px;color:#104b32;font-weight:bold;line-height:1.3}
-.brand img{width:65px;height:65px;object-fit:contain}
-nav{display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
-nav a{color:#25352b;font-size:14px;font-weight:bold}
-nav a:hover{color:#176b45}
-.hero{background:linear-gradient(135deg,#104b32,#237b50);color:white;text-align:center;padding:75px 20px}
-.hero-inner{max-width:850px;margin:auto}
-.hero .eyebrow{color:#c6ed9b;font-weight:bold;letter-spacing:2px;text-transform:uppercase}
-h1{font-size:clamp(34px,5vw,55px);line-height:1.15;margin:15px 0}
-.hero p{font-size:18px}
-.buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:25px}
-.btn{display:inline-block;padding:12px 22px;border-radius:6px;font-weight:bold}
-.btn-primary{background:#a6d96a;color:#17351f}
-.btn-outline{border:2px solid white;color:white}
-.container{max-width:1150px;width:92%;margin:auto}
-.section{padding:60px 0}
-.section-title{text-align:center;color:#104b32;font-size:32px;line-height:1.25;margin:0 0 12px}
-.section-intro{text-align:center;max-width:720px;margin:0 auto 32px}
-.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
-.card{border:1px solid #e0eae3;border-radius:10px;overflow:hidden;box-shadow:0 4px 15px #0000000d;background:#fff}
-.card img{width:100%;height:220px;object-fit:cover;display:block}
-.card-content{padding:20px}
-.card h3{color:#176b45;margin-top:0}
-.card a{color:#176b45;font-weight:bold}
-.about{background:#edf7f0}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
-.about h2{color:#104b32;font-size:32px;line-height:1.25}
-.about img{width:100%;height:330px;object-fit:cover;border-radius:10px}
-.cta{background:#104b32;color:white;text-align:center;padding:45px 20px}
-.cta h2{font-size:30px;margin-top:0}
-footer{background:#102c20;color:white;text-align:center;padding:25px 15px}
-footer a{color:#c6ed9b}
-@media(max-width:800px){
- .header{flex-direction:column;gap:12px}
- nav{gap:12px 16px}
- .cards,.about-grid{grid-template-columns:1fr}
- .hero{padding:55px 18px}
- .card img{height:240px}
- .about img{height:270px}
- .section{padding:45px 0}
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional cleaning and pest control services for homes and businesses.">
+    <title>Cleaning & Pest Control | Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header class="site-header">
-  <div class="container header-inner">
-<header>
-  <div class="header">
-    <a class="brand" href="index.html">
-      <img src="WhatsApp%20Image%202026-10-10%20at%2020.51.48%20(1).jpeg" alt="FreshSpace logo">
-      <span>FreshSpace Hygiene<br>&amp; Pest Solutions</span>
-    </a>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container navbar">
+            <a href="#home" class="logo">
+                <img src="images/logo.jpeg" alt="Company logo">
+            </a>
 
-    <nav aria-label="Main navigation">
-      <a class="active" href="index.html">Home</a>
-      <a href="about-us.html">About Us</a>
-      <a href="our-services.html">Our Services</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact-us.html">Contact Us</a>
-      <a href="index.html">HOME</a>
-      <a href="about-us.html">ABOUT US</a>
-      <a href="our-services.html">OUR SERVICES</a>
-      <a href="gallery.html">GALLERY</a>
-      <a href="contact-us.html">CONTACT US</a>
-    </nav>
-  </div>
-</header>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon" aria-label="Toggle navigation">
+                ☰
+            </label>
 
-<main>
-
-  <section class="hero">
-    <div class="container hero-content">
-      <p class="eyebrow">Clean spaces. Healthier living.</p>
-      <h1>A Cleaner, Healthier Space Starts Here</h1>
-      <p>
-        FreshSpace Hygiene &amp; Pest Solutions helps homes and businesses
-        maintain cleaner, more comfortable and hygienic environments.
-      </p>
-
-      <div class="button-row">
-        <a class="btn btn-primary" href="contact-us.html">Get a Quote</a>
-        <a class="btn btn-outline"
-           href="https://wa.me/254181189836?text=Hello%20FreshSpace%2C%20I%20would%20like%20to%20request%20a%20quote."
-           target="_blank" rel="noopener">WhatsApp Us</a>
-      </div>
-<section class="hero">
-  <div class="hero-inner">
-    <p class="eyebrow">Clean spaces. Healthier living.</p>
-    <h1>A Cleaner, Healthier Space Starts Here</h1>
-    <p>FreshSpace Hygiene &amp; Pest Solutions helps homes and businesses maintain cleaner, more comfortable and hygienic environments.</p>
-
-    <div class="buttons">
-      <a class="btn btn-primary" href="contact-us.html">Get a Quote</a>
-      <a class="btn btn-outline" href="https://wa.me/254181189836?text=Hello%20FreshSpace%2C%20I%20would%20like%20to%20request%20a%20quote." target="_blank" rel="noopener">WhatsApp Us</a>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="section-heading">
-        <h2>What We Offer</h2>
-        <p>
-          Practical hygiene and pest-solution services tailored to your
-          space and needs.
-        </p>
-      </div>
-  </div>
-</section>
-
-      <div class="grid">
-        <article class="card">
-          <img src="WhatsApp%20Image%202026-10-10%20at%2012.04.17.jpg"
-               alt="Cleaning service">
-          <div class="card-content">
-            <h3>Cleaning Services</h3>
-            <p>
-              Cleaning support for homes and workplaces to help maintain
-              neat, comfortable and welcoming environments.
-            </p>
-            <a href="our-services.html">Explore cleaning services &rarr;</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="WhatsApp%20Image%202026-10-10%20at%2016.12.49.jpeg"
-               alt="Pest control service">
-          <div class="card-content">
-            <h3>Pest Control</h3>
-            <p>
-              Pest-management solutions to help address unwanted pests
-              in residential and commercial spaces.
-            </p>
-            <a href="our-services.html">Explore pest control &rarr;</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="WhatsApp%20Image%202026-10-10%20at%2016.13.02.jpeg"
-               alt="Hygiene service">
-          <div class="card-content">
-            <h3>Hygiene Solutions</h3>
-            <p>
-              Hygiene-focused services to support cleaner and healthier
-              surroundings.
-            </p>
-            <a href="our-services.html">Explore our services &rarr;</a>
-          </div>
-        </article>
-      </div>
-<section class="section">
-  <div class="container">
-    <h2 class="section-title">What We Offer</h2>
-    <p class="section-intro">Practical cleaning, hygiene and pest-control services for homes and businesses.</p>
-
-    <div class="cards">
-      <article class="card">
-        <img src="WhatsApp%20Image%202026-10-10%20at%2012.04.17.jpg" alt="Cleaning services">
-        <div class="card-content">
-          <h3>Cleaning Services</h3>
-          <p>Support for cleaner, tidier and more welcoming homes and workplaces.</p>
-          <a href="our-services.html">Explore services &rarr;</a>
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact" class="nav-contact">Contact Us</a>
+            </nav>
         </div>
-      </article>
+    </header>
 
-      <article class="card">
-        <img src="WhatsApp%20Image%202026-10-10%20at%2016.12.49.jpeg" alt="Pest control services">
-        <div class="card-content">
-          <h3>Pest Control</h3>
-          <p>Solutions to help manage unwanted pests in residential and commercial spaces.</p>
-          <a href="our-services.html">Explore services &rarr;</a>
+    <main>
+        <!-- HERO / HOMEPAGE BANNER -->
+        <section class="hero" id="home">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <p class="eyebrow">CLEAN SPACES. HEALTHY LIVING.</p>
+                <h1>Professional Cleaning & Pest Control Services</h1>
+                <p class="hero-text">
+                    We help keep your home and workplace clean, fresh,
+                    hygienic and free from unwanted pests.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">Explore Services</a>
+                    <a href="#contact" class="btn btn-outline">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRUST STRIP -->
+        <section class="trust-strip">
+            <div class="container trust-items">
+                <div>
+                    <span class="trust-icon">✓</span>
+                    <span>Reliable Service</span>
+                </div>
+                <div>
+                    <span class="trust-icon">✦</span>
+                    <span>Attention to Detail</span>
+                </div>
+                <div>
+                    <span class="trust-icon">✓</span>
+                    <span>Homes & Businesses</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="section about" id="about">
+            <div class="container about-grid">
+                <div class="about-image">
+                    <img src="images/Team.jpg" alt="Our cleaning team">
+                    <div class="image-label">
+                        <strong>Clean Spaces,</strong>
+                        <span>Better Living</span>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <p class="eyebrow">WELCOME TO OUR COMPANY</p>
+                    <h2>Your Trusted Partner in Cleaning & Hygiene</h2>
+                    <p>
+                        We provide cleaning and pest control services designed
+                        to help homes, offices and commercial spaces stay clean,
+                        comfortable and hygienic.
+                    </p>
+                    <p>
+                        From everyday cleaning to detailed deep cleaning and
+                        pest management, we focus on quality, care and dependable
+                        service.
+                    </p>
+                    <a href="#contact" class="text-link">Talk to Our Team →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section class="section services" id="services">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">WHAT WE DO</p>
+                    <h2>Our Professional Services</h2>
+                    <p>Practical solutions for cleaner, healthier spaces.</p>
+                </div>
+
+                <div class="service-grid">
+                    <article class="service-card">
+                        <img
+                            src="images/WhatsApp Image 2026-10-16 at 14.39.07.jpg"
+                            alt="Cleaning service">
+                        <div class="service-info">
+                            <span class="service-number">01</span>
+                            <h3>Residential Cleaning</h3>
+                            <p>Keep your home fresh, tidy and comfortable.</p>
+                            <a href="#contact">Enquire Now →</a>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <img
+                            src="images/WhatsApp Image 2026-10-16 at 14.41.05.jpg"
+                            alt="Professional cleaning work">
+                        <div class="service-info">
+                            <span class="service-number">02</span>
+                            <h3>Office Cleaning</h3>
+                            <p>Maintain a clean and welcoming workplace.</p>
+                            <a href="#contact">Enquire Now →</a>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <img
+                            src="images/WhatsApp Image 2026-10-16 at 14.43.56.jpg"
+                            alt="Deep cleaning service">
+                        <div class="service-info">
+                            <span class="service-number">03</span>
+                            <h3>Deep Cleaning</h3>
+                            <p>Give your space extra care and detailed cleaning.</p>
+                            <a href="#contact">Enquire Now →</a>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <img
+                            src="images/WhatsApp Image 2026-10-16 at 15.20.56.jpg"
+                            alt="Cleaning and hygiene service">
+                        <div class="service-info">
+                            <span class="service-number">04</span>
+                            <h3>Pest Control</h3>
+                            <p>Get help managing unwanted pests in your space.</p>
+                            <a href="#contact">Enquire Now →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CALL TO ACTION -->
+        <section class="cta">
+            <div class="container cta-content">
+                <div>
+                    <p class="eyebrow">READY FOR A FRESH START?</p>
+                    <h2>Let's Make Your Space Shine</h2>
+                    <p>Contact us to discuss your cleaning or pest control needs.</p>
+                </div>
+                <a href="#contact" class="btn btn-light">Request a Service</a>
+            </div>
+        </section>
+
+        <!-- GALLERY -->
+        <section class="section gallery" id="gallery">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">OUR WORK</p>
+                    <h2>A Look at What We Do</h2>
+                    <p>Explore some of our cleaning and service photos.</p>
+                </div>
+
+                <div class="gallery-grid">
+                    <img src="images/WhatsApp Image 2026-10-16 at 14.39.07 (2).jpg"
+                         alt="Cleaning project one">
+                    <img src="images/WhatsApp Image 2026-10-16 at 14.39.07 (3).jpg"
+                         alt="Cleaning project two">
+                    <img src="images/WhatsApp Image 2026-10-16 at 14.41.05 (1).jpg"
+                         alt="Cleaning project three">
+                    <img src="images/WhatsApp Image 2026-10-16 at 14.43.56 (1).jpg"
+                         alt="Cleaning project four">
+                    <img src="images/WhatsApp Image 2026-10-16 at 15.20.56 (1).jpg"
+                         alt="Cleaning project five">
+                    <img src="images/WhatsApp Image 2026-10-16 at 15.20.56 (2).jpg"
+                         alt="Cleaning project six">
+                    <img src="images/WhatsApp Image 2026-10-16 at 15.20.56 (3).jpg"
+                         alt="Cleaning project seven">
+                    <img src="images/WhatsApp Image 2026-10-16 at 15.20.56 (4).jpg"
+                         alt="Cleaning project eight">
+                    <img src="images/WhatsApp Image 2026-10-16 at 15.20.56 (5).jpg"
+                         alt="Cleaning project nine">
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section contact" id="contact">
+            <div class="container contact-grid">
+                <div>
+                    <p class="eyebrow">GET IN TOUCH</p>
+                    <h2>Need a Cleaner, Healthier Space?</h2>
+                    <p>
+                        Tell us what you need, and get in touch with our team
+                        to discuss the right service for your property.
+                    </p>
+
+                    <!-- Replace these details with your actual contacts -->
+                    <div class="contact-detail">
+                        <strong>Phone</strong>
+                        <span>Add your business phone number</span>
+                    </div>
+                    <div class="contact-detail">
+                        <strong>Email</strong>
+                        <span>Add your business email</span>
+                    </div>
+                    <div class="contact-detail">
+                        <strong>Location</strong>
+                        <span>Add your service area</span>
+                    </div>
+                </div>
+
+                <form class="contact-form" action="#" method="get">
+                    <h3>Send an Enquiry</h3>
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name"
+                           placeholder="Enter your name" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="Enter your email" required>
+
+                    <label for="service">Service Needed</label>
+                    <select id="service" name="service" required>
+                        <option value="">Choose a service</option>
+                        <option>Residential Cleaning</option>
+                        <option>Office Cleaning</option>
+                        <option>Deep Cleaning</option>
+                        <option>Pest Control</option>
+                        <option>Other</option>
+                    </select>
+
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="4"
+                              placeholder="Tell us what you need"></textarea>
+
+                    <button type="submit" class="btn btn-primary">
+                        Send Enquiry
+                    </button>
+                    <p class="form-note">
+                        This demo form is not connected to an email service yet.
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© 2026 Cleaning & Pest Control. All rights reserved.</p>
+            <a href="#home">Back to Top ↑</a>
         </div>
-      </article>
-
-      <article class="card">
-        <img src="WhatsApp%20Image%202026-10-10%20at%2016.13.02.jpeg" alt="Hygiene solutions">
-        <div class="card-content">
-          <h3>Hygiene Solutions</h3>
-          <p>Hygiene-focused services to support cleaner and healthier surroundings.</p>
-          <a href="our-services.html">Explore services &rarr;</a>
-        </div>
-      </article>
-    </div>
-
-      <div class="button-row" style="justify-content:center">
-        <a class="btn btn-green" href="our-services.html">View All Services</a>
-      </div>
-    <div class="buttons">
-      <a class="btn btn-primary" style="background:#176b45;color:white" href="our-services.html">View All Services</a>
-    </div>
-  </section>
-
-  <section class="section section-light">
-    <div class="container two-column">
-      <div>
-        <p class="eyebrow">Why FreshSpace?</p>
-        <h2>Service Focused on Your Needs</h2>
-        <p>
-          We aim to help customers maintain cleaner spaces through
-          practical hygiene and pest-solution services.
-        </p>
-
-        <ul class="check-list">
-          <li>Services for homes and businesses</li>
-          <li>Clear communication and enquiries</li>
-          <li>Solutions tailored to your requirements</li>
-          <li>Convenient phone and WhatsApp contact</li>
-        </ul>
-
-        <a class="btn btn-green" href="about-us.html">Learn About Us</a>
-  </div>
-</section>
-
-<section class="section about">
-  <div class="container about-grid">
-    <div>
-      <h2>About FreshSpace</h2>
-      <p>We aim to help customers maintain clean, hygienic and comfortable spaces through practical service and clear communication.</p>
-      <p>We serve customers looking for cleaning, hygiene and pest-control solutions for their properties.</p>
-      <div class="buttons" style="justify-content:flex-start">
-        <a class="btn btn-primary" style="background:#176b45;color:white" href="about-us.html">Learn About Us</a>
-        <a class="btn btn-primary" style="background:#176b45;color:white" href="gallery.html">View Gallery</a>
-      </div>
-    </div>
-
-      <div>
-        <img class="feature-image"
-             src="WhatsApp%20Image%202026-10-11%20at%2015.38.43.jpg"
-             alt="FreshSpace company van">
-      </div>
-    <div>
-      <img src="WhatsApp%20Image%202026-10-11%20at%2015.38.43%20(1).jpg" alt="FreshSpace office">
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container two-column">
-      <div>
-        <img class="feature-image"
-             src="WhatsApp%20Image%202026-10-11%20at%2015.38.43%20(1).jpg"
-             alt="FreshSpace office">
-      </div>
-  </div>
-</section>
-
-      <div>
-        <p class="eyebrow">Discover FreshSpace</p>
-        <h2>Get to Know Our Company</h2>
-        <p>
-          Learn more about FreshSpace, our commitment to service and
-          the hygiene solutions we offer.
-        </p>
-        <a class="btn btn-green" href="about-us.html">About Us</a>
-        <a class="btn btn-green" href="gallery.html">View Gallery</a>
-      </div>
-<section class="section">
-  <div class="container about-grid">
-    <div>
-      <img src="WhatsApp%20Image%202026-10-11%20at%2015.38.43.jpg" alt="FreshSpace company van">
-    </div>
-  </section>
-
-  <section class="cta">
-    <div class="container">
-      <h2>Ready to Request a Quote?</h2>
-      <p>
-        Tell us what service you need and let us discuss the next steps.
-      </p>
-
-      <div class="button-row" style="justify-content:center">
-        <a class="btn btn-primary" href="contact-us.html">Get a Quote</a>
-        <a class="btn btn-outline"
-           href="https://wa.me/254181189836?text=Hello%20FreshSpace%2C%20I%20would%20like%20to%20request%20a%20quote."
-           target="_blank" rel="noopener">WhatsApp Us</a>
-        <a class="btn btn-outline" href="tel:+254181189836">Call Us</a>
-      </div>
-    <div>
-      <h2 style="color:#104b32">Service You Can Reach Out For</h2>
-      <p>Tell us about your cleaning or pest-control needs. We welcome your enquiries and will discuss the next steps with you.</p>
-      <a class="btn btn-primary" style="background:#176b45;color:white" href="contact-us.html">Get a Quote</a>
-    </div>
-  </section>
-  </div>
-</section>
-
-<section class="cta">
-  <h2>Ready to Request a Quote?</h2>
-  <p>Contact FreshSpace to discuss the service you need.</p>
-  <div class="buttons">
-    <a class="btn btn-primary" href="contact-us.html">Get a Quote</a>
-    <a class="btn btn-outline" href="https://wa.me/254181189836?text=Hello%20FreshSpace%2C%20I%20would%20like%20to%20request%20a%20quote." target="_blank" rel="noopener">WhatsApp Us</a>
-    <a class="btn btn-outline" href="tel:+254181189836">Call Us</a>
-  </div>
-</section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="container">
-    <p><strong>FreshSpace Hygiene &amp; Pest Solutions</strong></p>
-    <p>Cleaner spaces. Better living.</p>
-    <p>
-      <a href="tel:+254181189836">Call Us</a> |
-      <a href="https://wa.me/254181189836">WhatsApp</a> |
-      <a href="contact-us.html">Get a Quote</a>
-    </p>
-    <p>&copy; 2026 FreshSpace Hygiene &amp; Pest Solutions. All rights reserved.</p>
-  </div>
-<footer>
-  <p><strong>FreshSpace Hygiene &amp; Pest Solutions</strong></p>
-  <p>Cleaner spaces. Better living.</p>
-  <p><a href="tel:+254181189836">Call Us</a> | <a href="https://wa.me/254181189836">WhatsApp</a> | <a href="contact-us.html">Get a Quote</a></p>
-  <p>&copy; 2026 FreshSpace Hygiene &amp; Pest Solutions. All rights reserved.</p>
-</footer>
+    </footer>
 
 </body>
+</html>
