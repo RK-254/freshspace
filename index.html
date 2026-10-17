@@ -9,7 +9,7 @@
 body{font-family:'Segoe UI',Arial,sans-serif;line-height:1.6;color:#222;background:#fff}
 header{background:#fff;padding:0 5%;display:flex;justify-content:space-between;align-items:center;box-shadow:0 3px 18px rgba(0,0,0,0.1);position:sticky;top:0;z-index:100;height:85px}
 .logo-area{display:flex;align-items:center}
-.logo-area img{height:200px;width:200px;object-fit:contain;border-radius:10px}
+.logo-area img{height:78px;width:78px;object-fit:contain;border-radius:10px}
 .nav-tabs{display:flex;align-items:center;gap:5px}
 .nav-tabs a{padding:12px 18px;text-decoration:none;color:#333;font-weight:700;font-size:17px;border-radius:8px;transition:0.2s}
 .nav-tabs a:hover{background:#e8f5e9;color:#0a5c2d}
@@ -26,10 +26,11 @@ header{background:#fff;padding:0 5%;display:flex;justify-content:space-between;a
 .hero-img{flex:1;min-width:350px}
 .hero-img img{width:100%;border-radius:20px;box-shadow:0 12px 35px rgba(0,0,0,0.15)}
 .gallery-text{padding:60px 5%;background:#f8f8f8}
+.card-img{width:100%;height:220px;object-fit:cover;border-radius:10px 10px 0 0;display:block}
 .team-section{padding:50px 5%;display:flex;flex-wrap:wrap;gap:40px;align-items:center;background:#fff}
 .footer{background:#0a5c2d;color:#fff;text-align:center;padding:30px}
 .whatsapp-float{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:14px 22px;border-radius:50px;text-decoration:none;font-weight:800;box-shadow:0 4px 15px rgba(0,0,0,0.25)}
-@media(max-width:900px){header{height:auto;padding:12px 5%;flex-wrap:wrap}.logo-area img{height:65px;width:65px}.nav-tabs{width:100%;justify-content:center;margin-top:10px;flex-wrap:wrap}.nav-tabs a{font-size:15px;padding:10px 12px}.hero h1{font-size:32px}}
+@media(max-width:900px){header{height:auto;padding:12px 5%;flex-wrap:wrap}.logo-area img{height:65px;width:65px}.nav-tabs{width:100%;justify-content:center;margin-top:10px;flex-wrap:wrap}.nav-tabs a{font-size:15px;padding:10px 12px}.hero h1{font-size:32px}.card-img{height:200px}}
 </style>
 </head>
 <body>
@@ -67,23 +68,40 @@ header{background:#fff;padding:0 5%;display:flex;justify-content:space-between;a
 FreshSpace Cleaning & Pest Control provides professional, reliable services across Nairobi. Our trained team delivers same-day cleaning and pest control for homes and offices.
 </p>
 
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;text-align:left;max-width:1100px;margin:0 auto">
-<div style="background:#fff;padding:25px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.06)">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;max-width:1150px;margin:0 auto">
+
+<div style="background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,0.08)">
+<img src="images/office.jpg" alt="Office Cleaning Nairobi" class="card-img">
+<div style="padding:20px">
 <h3 style="color:#0a5c2d;margin-bottom:8px">🏢 Office Cleaning</h3>
-<p style="color:#555">Daily, weekly and deep cleaning for Nairobi CBD, Westlands, Karen. Sanitization, washrooms, workstations.</p>
+<p style="color:#555;font-size:15px">Daily, weekly and deep cleaning for Nairobi CBD, Westlands, Karen. Sanitization, washrooms, workstations.</p>
 </div>
-<div style="background:#fff;padding:25px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.06)">
+</div>
+
+<div style="background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,0.08)">
+<img src="images/home.jpg" alt="Home Cleaning Nairobi" class="card-img">
+<div style="padding:20px">
 <h3 style="color:#0a5c2d;margin-bottom:8px">🏠 Home Cleaning</h3>
-<p style="color:#555">Complete house cleaning, deep cleaning, move-in/move-out, kitchen and bathroom scrubbing.</p>
+<p style="color:#555;font-size:15px">Complete house cleaning, deep cleaning, move-in/move-out, kitchen and bathroom scrubbing.</p>
 </div>
-<div style="background:#fff;padding:25px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.06)">
+</div>
+
+<div style="background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,0.08)">
+<img src="images/pest.jpg" alt="Pest Control Nairobi" class="card-img">
+<div style="padding:20px">
 <h3 style="color:#0a5c2d;margin-bottom:8px">🐛 Pest Control & Fumigation</h3>
-<p style="color:#555">Safe and licensed pest control for cockroaches, bedbugs, rats, ants, mosquitoes. Certified chemicals.</p>
+<p style="color:#555;font-size:15px">Safe and licensed pest control for cockroaches, bedbugs, rats, ants, mosquitoes. Certified chemicals.</p>
 </div>
-<div style="background:#fff;padding:25px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.06)">
+</div>
+
+<div style="background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,0.08)">
+<img src="images/van.jpg" alt="FreshSpace Van Nairobi" class="card-img">
+<div style="padding:20px">
 <h3 style="color:#0a5c2d;margin-bottom:8px">🚐 Van On-the-Go Service</h3>
-<p style="color:#555">Our branded van brings team and supplies to your doorstep. Same-day response across Nairobi.</p>
+<p style="color:#555;font-size:15px">Our branded van brings team and supplies to your doorstep. Same-day response across Nairobi.</p>
 </div>
+</div>
+
 </div>
 
 <div style="max-width:1100px;margin:40px auto 0;background:#fff;padding:30px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.06);text-align:left">
