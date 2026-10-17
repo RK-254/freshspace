@@ -1,612 +1,907 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#187443">
-  <meta name="description" content="FreshSpace Hygiene & Pest Solutions offers residential and office cleaning, deep cleaning, carpet and sofa cleaning, pest control and fumigation in Nairobi.">
-  <title>FreshSpace Hygiene & Pest Solutions | Nairobi</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
-</head>
-
-<body>
-
-  <!-- TOP BAR -->
-  <div class="topbar">
-    <div class="container topbar-content">
-      <span>Professional Cleaning & Pest Solutions in Nairobi</span>
-      <a href="mailto:freshspace@gmail.com">freshspace@gmail.com</a>
-    </div>
-  </div>
-
-  <!-- NAVIGATION -->
-  <header class="header">
-    <div class="container nav-container">
-      <a href="#home" class="brand">
-        <img src="images/logo.jpeg" alt="FreshSpace logo">
-        <span>FreshSpace<small>HYGIENE & PEST SOLUTIONS</small></span>
-      </a>
-
-      <button class="menu-toggle" aria-label="Toggle navigation"
-        aria-expanded="false">☰</button>
-
-      <nav class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#faqs">FAQs</a>
-        <a href="#contact" class="nav-button">Get a Quote</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-
-    <!-- HERO -->
-    <section class="hero" id="home">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <p class="eyebrow">WELCOME TO FRESHSPACE</p>
-
-          <h1>A Cleaner Space.<br>
-            <span>A Healthier You.</span>
-          </h1>
-
-          <p class="hero-description">
-            Your trusted partner for professional cleaning and pest
-            solutions. We help homes, offices and businesses across
-            Nairobi enjoy cleaner, fresher and more comfortable spaces.
-          </p>
-
-          <div class="hero-buttons">
-            <a href="#contact" class="button button-primary">
-              Request a Quote →
-            </a>
-
-            <a href="https://wa.me/254181189836"
-               class="button button-outline"
-               target="_blank" rel="noopener">
-              WhatsApp Us
-            </a>
-          </div>
-
-          <div class="hero-features">
-            <span>✓ Home & Office Cleaning</span>
-            <span>✓ Deep Cleaning</span>
-            <span>✓ Pest Control</span>
-          </div>
-        </div>
-
-        <div class="hero-image">
-          <img src="images/Team.jpg"
-               alt="FreshSpace Hygiene and Pest Solutions team">
-          <div class="image-label">
-            <strong>Fresh spaces start here.</strong>
-            <span>Cleaning care for your space</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- QUICK INTRO -->
-    <section class="highlights">
-      <div class="container highlights-grid">
-        <div>
-          <span class="highlight-icon">⌂</span>
-          <div><strong>Residential Care</strong>
-            <p>Cleaning for your home</p></div>
-        </div>
-        <div>
-          <span class="highlight-icon">▦</span>
-          <div><strong>Office Cleaning</strong>
-            <p>Fresh, welcoming workplaces</p></div>
-        </div>
-        <div>
-          <span class="highlight-icon">✧</span>
-          <div><strong>Specialist Services</strong>
-            <p>Detailed cleaning solutions</p></div>
-        </div>
-        <div>
-          <span class="highlight-icon">♧</span>
-          <div><strong>Pest Solutions</strong>
-            <p>Help with pest concerns</p></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="section" id="about">
-      <div class="container two-column">
-        <div class="about-image">
-          <img src="images/Team.jpg"
-               alt="The FreshSpace team">
-          <div class="image-stamp">
-            <span>FRESHSPACE</span>
-            <strong>Care in every clean.</strong>
-          </div>
-        </div>
-
-        <div class="section-content">
-          <p class="eyebrow">ABOUT OUR COMPANY</p>
-          <h2>Creating Cleaner, Healthier <span>Spaces.</span></h2>
-
-          <p>
-            FreshSpace Hygiene & Pest Solutions provides cleaning and
-            pest-control services for homes, offices and other properties.
-            We understand that a clean environment contributes to comfort,
-            confidence and a welcoming atmosphere.
-          </p>
-
-          <p>
-            From routine cleaning to deep cleaning and specialist
-            pest-control enquiries, we help you find a solution suited
-            to your space and requirements.
-          </p>
-
-          <ul class="check-list">
-            <li>Residential and commercial cleaning</li>
-            <li>Specialist cleaning services</li>
-            <li>Pest control and fumigation enquiries</li>
-            <li>Serving Nairobi and surrounding areas</li>
-          </ul>
-
-          <a href="#contact" class="text-link">Talk to our team →</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section class="section services-section" id="services">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">OUR SERVICES</p>
-          <h2>Everything You Need for a <span>Fresher Space.</span></h2>
-          <p>
-            Explore our cleaning and pest-solution services.
-            Contact us to discuss your property and request a quote.
-          </p>
-        </div>
-
-        <div class="services-grid">
-
-          <article class="service-card">
-            <div class="service-icon">⌂</div>
-            <h3>Residential Cleaning</h3>
-            <p>
-              Keep your home neat and welcoming with cleaning tailored
-              to your household's needs.
-            </p>
-            <a href="#contact">Request a quote →</a>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon">▦</div>
-            <h3>Office Cleaning</h3>
-            <p>
-              Maintain clean, organised and professional workspaces
-              for employees and visitors.
-            </p>
-            <a href="#contact">Request a quote →</a>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon">✧</div>
-            <h3>Deep Cleaning</h3>
-            <p>
-              Detailed cleaning for areas that need extra attention
-              beyond everyday cleaning.
-            </p>
-            <a href="#contact">Request a quote →</a>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon">▤</div>
-            <h3>Carpet & Sofa Cleaning</h3>
-            <p>
-              Refresh carpets and upholstered furniture by addressing
-              accumulated dirt and everyday marks.
-            </p>
-            <a href="#contact">Request a quote →</a>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon">♧</div>
-            <h3>Pest Control</h3>
-            <p>
-              Discuss unwanted pests at your home or business and
-              suitable treatment options.
-            </p>
-            <a href="#contact">Request a quote →</a>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon">↗</div>
-            <h3>Move-in / Move-out Cleaning</h3>
-            <p>
-              Prepare a property for new occupants or leave it tidy
-              when moving to another location.
-            </p>
-            <a href="#contact">Request a quote →</a>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon">⌁</div>
-            <h3>Post-construction Cleaning</h3>
-            <p>
-              Help remove construction dust and residue after building,
-              renovation or repair work.
-            </p>
-            <a href="#contact">Request a quote →</a>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon">✳</div>
-            <h3>Fumigation</h3>
-            <p>
-              Contact our team to discuss your fumigation needs,
-              property requirements and preparation.
-            </p>
-            <a href="#contact">Request a quote →</a>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- WHY CHOOSE US -->
-    <section class="why-section">
-      <div class="container why-grid">
-        <div>
-          <p class="eyebrow light-eyebrow">WHY FRESHSPACE?</p>
-          <h2>A Fresher Space Begins with <span>Good Care.</span></h2>
-          <p>
-            Every property has different needs. Tell us what you want
-            cleaned or treated, and we will discuss the appropriate
-            service for your space.
-          </p>
-          <a href="#contact" class="button button-white">
-            Contact Our Team →
-          </a>
-        </div>
-
-        <div class="why-list">
-          <article>
-            <span>01</span>
-            <div>
-              <h3>Services for Different Spaces</h3>
-              <p>Options for homes, offices and other properties.</p>
-            </div>
-          </article>
-          <article>
-            <span>02</span>
-            <div>
-              <h3>Attention to Detail</h3>
-              <p>Discuss the areas and priorities that matter most to you.</p>
-            </div>
-          </article>
-          <article>
-            <span>03</span>
-            <div>
-              <h3>Multiple Solutions</h3>
-              <p>Cleaning, upholstery care and pest-control enquiries.</p>
-            </div>
-          </article>
-          <article>
-            <span>04</span>
-            <div>
-              <h3>Local Service</h3>
-              <p>Serving Nairobi and surrounding areas.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- HOW IT WORKS -->
-    <section class="section process-section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">OUR PROCESS</p>
-          <h2>Getting Started Is <span>Simple.</span></h2>
-          <p>Three steps to discuss and arrange the service you need.</p>
-        </div>
-
-        <div class="process-grid">
-          <article>
-            <span class="step-number">1</span>
-            <h3>Tell Us What You Need</h3>
-            <p>Choose a service and describe your property and requirements.</p>
-          </article>
-          <article>
-            <span class="step-number">2</span>
-            <h3>Discuss Your Quote</h3>
-            <p>We can follow up about the scope, location, timing and pricing.</p>
-          </article>
-          <article>
-            <span class="step-number">3</span>
-            <h3>Arrange Your Service</h3>
-            <p>Confirm the details with our team before the service takes place.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- GALLERY -->
-    <section class="section gallery-section" id="gallery">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">OUR GALLERY</p>
-          <h2>A Look at <span>FreshSpace.</span></h2>
-          <p>
-            Explore our team and service photos. Add your actual
-            cleaning photos to the images folder to display them here.
-          </p>
-        </div>
-
-        <div class="gallery-grid">
-          <figure>
-            <img src="images/WhatsApp Image 2026-10-16 at 14.39.07.jpg"
-                 alt="FreshSpace cleaning photo" loading="lazy">
-            <figcaption>Our Cleaning Services</figcaption>
-          </figure>
-
-          <figure>
-            <img src="images/WhatsApp Image 2026-10-16 at 14.39.07 (2).jpg"
-                 alt="FreshSpace service photo" loading="lazy">
-            <figcaption>Attention to Detail</figcaption>
-          </figure>
-
-          <figure>
-            <img src="images/WhatsApp Image 2026-10-16 at 14.41.05.jpg"
-                 alt="FreshSpace work photo" loading="lazy">
-            <figcaption>Fresh Spaces</figcaption>
-          </figure>
-
-          <figure>
-            <img src="images/WhatsApp Image 2026-10-16 at 14.43.56.jpg"
-                 alt="FreshSpace team and services" loading="lazy">
-            <figcaption>Our Team at Work</figcaption>
-          </figure>
-
-          <figure>
-            <img src="images/WhatsApp Image 2026-10-16 at 15.20.56.jpg"
-                 alt="FreshSpace cleaning work" loading="lazy">
-            <figcaption>Cleaning with Care</figcaption>
-          </figure>
-
-          <figure>
-            <img src="images/Team.jpg"
-                 alt="FreshSpace Hygiene and Pest Solutions team"
-                 loading="lazy">
-            <figcaption>The FreshSpace Team</figcaption>
-          </figure>
-        </div>
-
-        <p class="gallery-note">
-          Photo not showing? Check the exact filename and capitalization
-          inside your GitHub images folder.
-        </p>
-      </div>
-    </section>
-
-    <!-- FAQS -->
-    <section class="section faq-section" id="faqs">
-      <div class="container faq-grid">
-        <div class="section-content">
-          <p class="eyebrow">FREQUENTLY ASKED QUESTIONS</p>
-          <h2>Questions? We're Here to <span>Help.</span></h2>
-          <p>
-            Find answers to common questions about our services.
-            Contact us if you need more information.
-          </p>
-          <a href="#contact" class="text-link">Ask us a question →</a>
-        </div>
-
-        <div class="faq-list">
-          <details>
-            <summary>Which areas do you serve?</summary>
-            <p>
-              We serve Nairobi and surrounding areas. Contact us with
-              your location to discuss service availability.
-            </p>
-          </details>
-
-          <details>
-            <summary>How do I request a quote?</summary>
-            <p>
-              Complete the enquiry form below or contact us through
-              WhatsApp with details of the service you need.
-            </p>
-          </details>
-
-          <details>
-            <summary>Do you clean homes and offices?</summary>
-            <p>
-              Yes. Residential cleaning and office cleaning are among
-              our listed services.
-            </p>
-          </details>
-
-          <details>
-            <summary>Do you offer carpet and sofa cleaning?</summary>
-            <p>
-              Yes. You can enquire about carpet and upholstered
-              furniture cleaning using our contact form.
-            </p>
-          </details>
-
-          <details>
-            <summary>Can I ask about pest control and fumigation?</summary>
-            <p>
-              Yes. Describe the pest concern and property type so our
-              team can discuss the appropriate next steps.
-            </p>
-          </details>
-
-          <details>
-            <summary>How much do your services cost?</summary>
-            <p>
-              Pricing depends on the service and property requirements.
-              Contact us for a quote based on your needs.
-            </p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT AND BOOKING FORM -->
-    <section class="contact-section" id="contact">
-      <div class="container contact-grid">
-        <div class="contact-info">
-          <p class="eyebrow light-eyebrow">CONTACT FRESHSPACE</p>
-          <h2>Let's Make Your Space <span>Fresher.</span></h2>
-          <p>
-            Have a home, office or pest-control enquiry?
-            Send us your details and tell us what you need.
-          </p>
-
-          <div class="contact-item">
-            <span>✉</span>
-            <div>
-              <small>Email</small>
-              <a href="mailto:freshspace@gmail.com">
-                freshspace@gmail.com
-              </a>
-            </div>
-          </div>
-
-          <div class="contact-item">
-            <span>☎</span>
-            <div>
-              <small>Phone</small>
-              <a href="tel:+254181189836">+254 181 189 836</a>
-            </div>
-          </div>
-
-          <div class="contact-item">
-            <span>◉</span>
-            <div>
-              <small>WhatsApp</small>
-              <a href="https://wa.me/254181189836"
-                 target="_blank" rel="noopener">Chat with FreshSpace</a>
-            </div>
-          </div>
-
-          <div class="contact-item">
-            <span>⌖</span>
-            <div>
-              <small>Service Area</small>
-              <strong>Nairobi and surrounding areas</strong>
-            </div>
-          </div>
-        </div>
-
-        <form class="contact-form"
-              action="https://formsubmit.co/freshspace@gmail.com"
-              method="POST">
-
-          <input type="hidden" name="_subject"
-                 value="New FreshSpace Website Enquiry">
-          <input type="hidden" name="_template" value="table">
-
-          <h3>Request a Free Quote</h3>
-          <p class="form-intro">Tell us a little about your requirements.</p>
-
-          <div class="form-row">
-            <label>
-              Full Name *
-              <input type="text" name="name"
-                     placeholder="Your full name" required>
-            </label>
-
-            <label>
-              Phone Number *
-              <input type="tel" name="phone"
-                     placeholder="+254..." required>
-            </label>
-          </div>
-
-          <label>
-            Email Address
-            <input type="email" name="email"
-                   placeholder="you@example.com">
-          </label>
-
-          <label>
-            Service Required *
-            <select name="service" required>
-              <option value="">Choose a service</option>
-              <option>Residential Cleaning</option>
-              <option>Office Cleaning</option>
-              <option>Deep Cleaning</option>
-              <option>Carpet & Sofa Cleaning</option>
-              <option>Pest Control</option>
-              <option>Move-in / Move-out Cleaning</option>
-              <option>Post-construction Cleaning</option>
-              <option>Fumigation</option>
-              <option>Other Enquiry</option>
-            </select>
-          </label>
-
-          <label>
-            Location
-            <input type="text" name="location"
-                   placeholder="Estate, town or area">
-          </label>
-
-          <label>
-            Describe Your Requirements *
-            <textarea name="message" rows="4"
-                      placeholder="Tell us about the space, service and preferred date..."
-                      required></textarea>
-          </label>
-
-          <button type="submit" class="button button-primary submit-button">
-            Send My Enquiry →
-          </button>
-
-          <p class="form-note">
-            Your details will be used to respond to your enquiry.
-          </p>
-        </form>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-main">
-      <a href="#home" class="brand footer-brand">
-        <img src="images/logo.jpeg" alt="FreshSpace logo">
-        <span>FreshSpace<small>HYGIENE & PEST SOLUTIONS</small></span>
-      </a>
-
-      <p>Cleaner spaces. Healthier living.</p>
-
-      <div class="footer-links">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
-
-    <div class="container footer-bottom">
-      <span>© <span id="year"></span> FreshSpace Hygiene & Pest Solutions</span>
-      <a href="#home">Back to top ↑</a>
-    </div>
-  </footer>
-
-  <a class="floating-whatsapp"
-     href="https://wa.me/254181189836"
-     target="_blank" rel="noopener"
-     aria-label="Contact FreshSpace on WhatsApp">
-    WhatsApp ↗
-  </a>
-
-</body>
-</html>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --green: #187443;
+  --green-light: #2b9656;
+  --dark: #173b29;
+  --pale: #f1f8f2;
+  --text: #304137;
+  --muted: #68776d;
+  --white: #ffffff;
+  --border: #e0eae2;
+  --shadow: 0 14px 38px rgba(23, 59, 41, 0.10);
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 95px;
+}
+
+body {
+  margin: 0;
+  font-family: "DM Sans", Arial, sans-serif;
+  color: var(--text);
+  line-height: 1.7;
+}
+
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+
+.container {
+  width: min(1160px, 90%);
+  margin: 0 auto;
+}
+
+.topbar {
+  background: var(--dark);
+  color: white;
+  font-size: 12px;
+}
+
+.topbar-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 8px 0;
+}
+
+.topbar a { text-decoration: none; }
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.97);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-container {
+  min-height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--dark);
+  font: 800 20px/1.2 "Manrope", sans-serif;
+}
+
+.brand img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.brand small {
+  display: block;
+  font: 700 9px "DM Sans", sans-serif;
+  letter-spacing: 1.1px;
+  color: var(--green);
+  margin-top: 5px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.nav-links a:hover { color: var(--green-light); }
+
+.nav-links .nav-button {
+  color: white;
+  background: var(--green);
+  padding: 11px 16px;
+  border-radius: 6px;
+}
+
+.menu-toggle {
+  display: none;
+  background: var(--pale);
+  color: var(--green);
+  border: 0;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+  background: linear-gradient(120deg, #f0f8f1, #ffffff 75%);
+  overflow: hidden;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 55px;
+  padding-top: 65px;
+  padding-bottom: 75px;
+}
+
+.eyebrow {
+  color: var(--green);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.6px;
+  margin: 0 0 14px;
+}
+
+.hero h1 {
+  font: 800 clamp(38px, 4.5vw, 60px)/1.12 "Manrope", sans-serif;
+  letter-spacing: -1.8px;
+  color: var(--dark);
+  margin: 0 0 22px;
+}
+
+.hero h1 span,
+.section-content h2 span,
+.section-heading h2 span,
+.why-section h2 span,
+.contact-info h2 span {
+  color: var(--green-light);
+}
+
+.hero-description {
+  max-width: 560px;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 27px 0 22px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 19px;
+  border-radius: 7px;
+  text-decoration: none;
+  font: 700 13px "DM Sans", sans-serif;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.button:hover { transform: translateY(-2px); }
+
+.button-primary {
+  color: white;
+  background: var(--green);
+}
+
+.button-primary:hover { background: #105d34; }
+
+.button-outline {
+  background: white;
+  color: var(--green);
+  border-color: #c9ddce;
+}
+
+.hero-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 15px;
+  color: #4d6b57;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.hero-image {
+  position: relative;
+  padding: 0 0 22px 15px;
+}
+
+.hero-image > img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 18px;
+  background: #e5f0e6;
+  box-shadow: var(--shadow);
+}
+
+.image-label {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+.image-label strong,
+.image-label span { display: block; }
+
+.image-label strong {
+  font: 800 14px "Manrope", sans-serif;
+  color: var(--dark);
+}
+
+.image-label span {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+/* HIGHLIGHTS */
+
+.highlights { border-block: 1px solid var(--border); }
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 23px 0;
+}
+
+.highlights-grid > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.highlight-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 43px;
+  height: 43px;
+  border-radius: 10px;
+  background: var(--pale);
+  color: var(--green);
+  font-size: 22px;
+}
+
+.highlights-grid strong {
+  color: var(--dark);
+  font: 800 13px "Manrope", sans-serif;
+}
+
+.highlights-grid p {
+  margin: 2px 0 0;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+/* GENERAL SECTIONS */
+
+.section { padding: 88px 0; }
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 75px;
+}
+
+.about-image {
+  position: relative;
+  padding: 0 0 25px 18px;
+}
+
+.about-image > img {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+  border-radius: 16px;
+  background: var(--pale);
+}
+
+.image-stamp {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 15px 21px;
+  background: var(--green);
+  color: white;
+  border-radius: 8px;
+}
+
+.image-stamp span {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+.image-stamp strong {
+  font: 800 15px "Manrope", sans-serif;
+}
+
+.section-content h2,
+.section-heading h2,
+.why-section h2,
+.contact-info h2 {
+  font: 800 clamp(31px, 3.5vw, 44px)/1.2 "Manrope", sans-serif;
+  letter-spacing: -1.1px;
+  color: var(--dark);
+  margin: 0 0 18px;
+}
+
+.section-content > p:not(.eyebrow) {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.check-list {
+  list-style: none;
+  padding: 0;
+  margin: 23px 0;
+}
+
+.check-list li {
+  position: relative;
+  padding: 6px 0 6px 28px;
+  font-size: 13px;
+}
+
+.check-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  border-radius: 50%;
+  background: #e0f3e5;
+  color: var(--green);
+  font-weight: 800;
+}
+
+.text-link {
+  color: var(--green);
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+/* SERVICES */
+
+.services-section { background: #f4f9f4; }
+
+.section-heading {
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto 40px;
+}
+
+.section-heading > p:last-child {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 17px;
+}
+
+.service-card {
+  background: white;
+  border: 1px solid #e5eee6;
+  border-radius: 11px;
+  padding: 25px 21px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.service-icon {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  background: #eaf6ec;
+  color: var(--green);
+  border-radius: 10px;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.service-card h3 {
+  font: 800 15px/1.5 "Manrope", sans-serif;
+  color: var(--dark);
+  margin: 0 0 10px;
+}
+
+.service-card p {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.8;
+  min-height: 86px;
+}
+
+.service-card a {
+  color: var(--green);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+/* WHY CHOOSE US */
+
+.why-section {
+  background: var(--green);
+  padding: 78px 0;
+  color: white;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 75px;
+}
+
+.light-eyebrow { color: #c8edcf; }
+
+.why-section h2,
+.contact-info h2 { color: white; }
+
+.why-section h2 span,
+.contact-info h2 span { color: #bcebc7; }
+
+.why-grid > div:first-child > p:not(.eyebrow) {
+  color: #e0eee3;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.button-white {
+  color: var(--green);
+  background: white;
+}
+
+.why-list article {
+  display: flex;
+  gap: 20px;
+  padding: 17px 0;
+  border-bottom: 1px solid #ffffff35;
+}
+
+.why-list article:first-child { border-top: 1px solid #ffffff35; }
+
+.why-list article > span {
+  font: 800 23px "Manrope", sans-serif;
+  color: #bcebc7;
+}
+
+.why-list h3 {
+  font: 800 15px "Manrope", sans-serif;
+  margin: 0 0 5px;
+}
+
+.why-list p {
+  margin: 0;
+  color: #dcece0;
+  font-size: 12px;
+}
+
+/* PROCESS */
+
+.process-section { background: white; }
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.process-grid article {
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.step-number {
+  display: grid;
+  place-items: center;
+  width: 43px;
+  height: 43px;
+  background: var(--green);
+  color: white;
+  border-radius: 50%;
+  font: 800 17px "Manrope", sans-serif;
+}
+
+.process-grid h3 {
+  font: 800 16px "Manrope", sans-serif;
+  color: var(--dark);
+  margin: 18px 0 8px;
+}
+
+.process-grid p {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* GALLERY */
+
+.gallery-section { background: #f4f9f4; }
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.gallery-grid figure {
+  position: relative;
+  margin: 0;
+  height: 245px;
+  overflow: hidden;
+  border-radius: 11px;
+  background: #e1eee3;
+}
+
+.gallery-grid figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s;
+}
+
+.gallery-grid figure:hover img { transform: scale(1.05); }
+
+.gallery-grid figcaption {
+  position: absolute;
+  inset: auto 0 0;
+  padding: 35px 16px 14px;
+  background: linear-gradient(transparent, #0009);
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.gallery-note {
+  text-align: center;
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 20px;
+}
+
+/* FAQ */
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 75px;
+}
+
+.faq-list details {
+  padding: 19px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.faq-list details:first-child { border-top: 1px solid var(--border); }
+
+.faq-list summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  cursor: pointer;
+  list-style: none;
+  color: var(--dark);
+  font: 700 14px "Manrope", sans-serif;
+}
+
+.faq-list summary::-webkit-details-marker { display: none; }
+
+.faq-list summary::after {
+  content: "+";
+  color: var(--green);
+  font-size: 19px;
+}
+
+.faq-list details[open] summary::after { content: "−"; }
+
+.faq-list details p {
+  color: var(--muted);
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+/* CONTACT */
+
+.contact-section {
+  background: var(--dark);
+  padding: 82px 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 70px;
+  align-items: start;
+}
+
+.contact-info > p:not(.eyebrow) {
+  color: #d6e7da;
+  font-size: 14px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 25px;
+}
+
+.contact-item > span {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 43px;
+  height: 43px;
+  border-radius: 9px;
+  background: #ffffff15;
+  color: #bcebc7;
+  font-size: 20px;
+}
+
+.contact-item small,
+.contact-item a,
+.contact-item strong { display: block; }
+
+.contact-item small {
+  color: #bcd0c1;
+  font-size: 11px;
+}
+
+.contact-item a,
+.contact-item strong {
+  color: white;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.contact-form {
+  background: white;
+  border-radius: 13px;
+  padding: 30px;
+  box-shadow: var(--shadow);
+}
+
+.contact-form h3 {
+  font: 800 24px "Manrope", sans-serif;
+  color: var(--dark);
+  margin: 0;
+}
+
+.form-intro,
+.form-note {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.contact-form label {
+  display: block;
+  color: #344b3a;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 14px 0;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  margin-top: 7px;
+  padding: 12px;
+  border: 1px solid #dce6dd;
+  border-radius: 6px;
+  font: 400 13px "DM Sans", sans-serif;
+  color: var(--text);
+  background: white;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #a8d8b4;
+  border-color: var(--green);
+}
+
+.contact-form textarea { resize: vertical; }
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.submit-button {
+  width: 100%;
+  margin-top: 8px;
+  border: 0;
+}
+
+.form-note { line-height: 1.6; }
+
+/* FOOTER */
+
+.footer {
+  background: #102b1d;
+  color: #d6e5da;
+}
+
+.footer-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  padding: 30px 0;
+}
+
+.footer-brand { color: white; }
+
+.footer-brand small { color: #bcebc7; }
+
+.footer-main > p {
+  font-size: 12px;
+  color: #c2d5c7;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 17px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 16px 0;
+  border-top: 1px solid #ffffff25;
+  font-size: 11px;
+  color: #b9cbbd;
+}
+
+.footer-bottom a { text-decoration: none; }
+
+.floating-whatsapp {
+  position: fixed;
+  z-index: 90;
+  right: 18px;
+  bottom: 18px;
+  background: #168448;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 13px 17px;
+  border-radius: 30px;
+  box-shadow: 0 7px 22px #123d2850;
+}
+
+/* MOBILE AND TABLET */
+
+@media (max-width: 1000px) {
+  .nav-links { gap: 12px; }
+  .nav-links a { font-size: 11px; }
+  .hero-grid { gap: 30px; }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .highlights-grid { grid-template-columns: repeat(2, 1fr); }
+  .two-column, .why-grid, .faq-grid, .contact-grid { gap: 35px; }
+}
+
+@media (max-width: 720px) {
+  .topbar-content { justify-content: center; text-align: center; }
+  .topbar-content a { display: none; }
+
+  .nav-container { min-height: 72px; position: relative; }
+  .brand { font-size: 17px; }
+  .brand img { width: 43px; height: 43px; }
+
+  .menu-toggle { display: block; }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 71px;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 15px 5%;
+    box-shadow: var(--shadow);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .nav-links.open { display: flex; }
+  .nav-links a { padding: 12px 0; font-size: 13px; }
+  .nav-links .nav-button { text-align: center; padding: 12px; }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    padding-top: 35px;
+    padding-bottom: 50px;
+    gap: 30px;
+  }
+
+  .hero-image { grid-row: 1; }
+  .hero-image > img { height: 310px; }
+  .hero h1 { font-size: 42px; }
+
+  .highlights-grid { gap: 18px 12px; }
+  .highlights-grid > div { align-items: flex-start; }
+  .highlights-grid strong { font-size: 12px; }
+
+  .section { padding: 62px 0; }
+  .two-column, .why-grid, .faq-grid, .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .about-image > img { height: 320px; }
+
+  .section-content h2,
+  .section-heading h2,
+  .why-section h2,
+  .contact-info h2 { font-size: 34px; }
+
+  .service-card { padding: 19px 15px; }
+  .service-card h3 { font-size: 14px; }
+  .service-card p { font-size: 11px; min-height: 100px; }
+
+  .why-section, .contact-section { padding: 60px 0; }
+  .process-grid { grid-template-columns: 1fr; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  .gallery-grid figure { height: 190px; }
+
+  .contact-form { padding: 22px; }
+  .form-row { grid-template-columns: 1fr; gap: 0; }
+
+  .footer-main {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-main > p { margin: 0; }
+  .footer-bottom { flex-direction: column; }
+}
+
+@media (max-width: 390px) {
+  .services-grid { grid-template-columns: 1fr; }
+  .service-card p { min-height: 0; }
+  .hero h1 { font-size: 36px; }
+  .hero-buttons .button { width: 100%; }
+  .highlights-grid { grid-template-columns: 1fr; }
+}
