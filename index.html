@@ -4,188 +4,140 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PureGuard Cleaning & Pest Control</title>
-  <meta name="description" content="Professional cleaning and pest control services. Safe, effective and affordable.">
-  <link rel="icon" href="images/logo.jpeg">
+  <meta name="description" content="Professional cleaning and pest control services for homes and businesses.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Figtree:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ===== HEADER / NAV ===== -->
+  <!-- HEADER / NAVIGATION -->
   <header class="header">
-    <nav class="nav container">
+    <div class="container nav">
       <a href="index.html" class="logo">
-        <img src="images/logo.jpeg" alt="PureGuard logo">
-        <span>Pure<span>Guard</span></span>
+        <img src="images/logo.png" alt="PureGuard logo">
+        <span>Pure<b>Guard</b></span>
       </a>
-
-      <ul class="nav-links" id="navLinks">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Our Services</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-
-      <a href="contact.html" class="btn nav-cta">Get a Quote</a>
-
-      <button class="hamburger" id="hamburger" aria-label="Open menu">&#9776;</button>
-    </nav>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html" class="btn btn-small">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- ===== HERO ===== -->
-  <section class="hero">
-    <div class="hero-overlay container">
-      <h1>A Cleaner, Pest-Free Space You Can Trust</h1>
-      <p>Professional cleaning and pest control for homes and businesses. Safe, effective and guaranteed.</p>
+  <!-- HERO -->
+  <section class="hero" style="background-image: url('images/hero.jpg');">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <p class="tag">Trusted Cleaning & Pest Experts</p>
+      <h1>A Cleaner, Pest‑Free Space<br>You Can Breathe In</h1>
+      <p>Professional cleaning and safe, effective pest control for homes, offices and commercial properties.</p>
       <div class="hero-buttons">
-        <a href="contact.html" class="btn btn-primary">Book a Service</a>
+        <a href="contact.html" class="btn">Get a Free Quote</a>
         <a href="services.html" class="btn btn-outline">Our Services</a>
       </div>
     </div>
   </section>
 
-  <!-- ===== FEATURES STRIP ===== -->
-  <section class="features container">
-    <div class="feature">
-      <h3>&#10003; Certified Team</h3>
-      <p>Trained, vetted and insured professionals on every job.</p>
-    </div>
-    <div class="feature">
-      <h3>&#10003; Eco-Safe Products</h3>
-      <p>Child- and pet-friendly treatments that actually work.</p>
-    </div>
-    <div class="feature">
-      <h3>&#10003; Fast Response</h3>
-      <p>Same-day and emergency services available on request.</p>
-    </div>
-  </section>
-
-  <!-- ===== SERVICES ===== -->
-  <section class="services section">
+  <!-- SERVICES PREVIEW -->
+  <section class="section">
     <div class="container">
       <h2 class="section-title">What We Do</h2>
-      <p class="section-sub">From deep cleaning to full pest elimination — we've got you covered.</p>
-
+      <p class="section-sub">Complete care for your property, inside and out.</p>
       <div class="cards">
-        <article class="card">
-          <img src="images/WhatsApp%20Image%202026-10-16%20at%2014.39.07%20(2).jpg" alt="Cleaning service">
+        <div class="card">
+          <img src="images/cleaning.jpg" alt="Home cleaning">
           <div class="card-body">
-            <h3>Residential &amp; Office Cleaning</h3>
-            <p>Deep cleaning, move-in/move-out, carpets, windows and regular maintenance plans.</p>
-            <a href="services.html" class="card-link">Learn more &rarr;</a>
+            <h3>Home & Office Cleaning</h3>
+            <p>Deep cleaning, regular cleaning, carpets, sofas and move‑in/move‑out services.</p>
           </div>
-        </article>
-
-        <article class="card">
-          <img src="images/WhatsApp%20Image%202026-10-16%20at%2014.41.05.jpg" alt="Pest control service">
+        </div>
+        <div class="card">
+          <img src="images/pest-control.jpg" alt="Pest control">
           <div class="card-body">
             <h3>Pest Control</h3>
-            <p>Cockroaches, ants, bedbugs, rodents and more — treated at the source, not just the surface.</p>
-            <a href="services.html" class="card-link">Learn more &rarr;</a>
+            <p>Cockroaches, bedbugs, termites, rodents and mosquitoes, treated safely.</p>
           </div>
-        </article>
-
-        <article class="card">
-          <img src="images/WhatsApp%20Image%202026-10-16%20at%2014.43.56.jpg" alt="Fumigation service">
+        </div>
+        <div class="card">
+          <img src="images/fumigation.jpg" alt="Fumigation">
           <div class="card-body">
-            <h3>Fumigation</h3>
-            <p>Full-property fumigation for homes, offices, warehouses and commercial spaces.</p>
-            <a href="services.html" class="card-link">Learn more &rarr;</a>
+            <h3>Fumigation & Disinfection</h3>
+            <p>Full sanitisation for homes, schools, hotels and commercial spaces.</p>
           </div>
-        </article>
+        </div>
       </div>
+      <div class="center"><a href="services.html" class="btn">View All Services</a></div>
     </div>
   </section>
 
-  <!-- ===== ABOUT / TEAM ===== -->
-  <section class="about section">
-    <div class="container about-grid">
-      <div class="about-img">
-        <img src="images/Team.jpg" alt="Our team">
-      </div>
-      <div class="about-text">
-        <h2 class="section-title left">Why Choose Us?</h2>
-        <p>We combine years of hands-on experience with modern equipment and safe, approved products. Every job — big or small — gets the same attention to detail.</p>
-        <ul class="checklist">
-          <li>Locally owned and trusted</li>
-          <li>Transparent pricing, no hidden charges</li>
-          <li>Satisfaction guaranteed on every visit</li>
+  <!-- WHY CHOOSE US -->
+  <section class="section alt">
+    <div class="container why">
+      <img src="images/team.jpg" alt="Our team" class="why-img">
+      <div>
+        <h2 class="section-title left">Why Choose Us</h2>
+        <ul class="why-list">
+          <li><span>✔</span> Trained & certified technicians</li>
+          <li><span>✔</span> Eco‑friendly, child & pet safe products</li>
+          <li><span>✔</span> Affordable, transparent pricing</li>
+          <li><span>✔</span> Fast response, 7 days a week</li>
         </ul>
-        <a href="about.html" class="btn btn-primary">More About Us</a>
+        <a href="about.html" class="btn">Learn More About Us</a>
       </div>
     </div>
   </section>
 
-  <!-- ===== GALLERY PREVIEW ===== -->
-  <section class="gallery section">
-    <div class="container">
-      <h2 class="section-title">Our Work</h2>
-      <p class="section-sub">A few snapshots from recent jobs.</p>
-
-      <div class="gallery-grid">
-        <img src="images/WhatsApp%20Image%202026-10-16%20at%2014.39.07.jpg" alt="Job photo 1">
-        <img src="images/WhatsApp%20Image%202026-10-16%20at%2014.39.07%20(3).jpg" alt="Job photo 2">
-        <img src="images/WhatsApp%20Image%202026-10-16%20at%2014.41.05%20(1).jpg" alt="Job photo 3">
-        <img src="images/WhatsApp%20Image%202026-10-16%20at%2014.43.56%20(1).jpg" alt="Job photo 4">
-        <img src="images/WhatsApp%20Image%202026-10-16%20at%2015.20.56.jpg" alt="Job photo 5">
-        <img src="images/WhatsApp%20Image%202026-10-16%20at%2015.20.56%20(1).jpg" alt="Job photo 6">
-        <img src="images/WhatsApp%20Image%202026-10-16%20at%2015.20.56%20(2).jpg" alt="Job photo 7">
-        <img src="images/WhatsApp%20Image%202026-10-16%20at%2015.20.56%20(4).jpg" alt="Job photo 8">
-        <img src="images/WhatsApp%20Image%202026-10-16%20at%2015.20.56%20(5).jpg" alt="Job photo 9">
-      </div>
-
-      <div class="center">
-        <a href="gallery.html" class="btn btn-outline">View Full Gallery</a>
-      </div>
+  <!-- STATS -->
+  <section class="stats">
+    <div class="container stats-grid">
+      <div><h3>500+</h3><p>Happy Clients</p></div>
+      <div><h3>10+</h3><p>Years Experience</p></div>
+      <div><h3>24/7</h3><p>Support</p></div>
+      <div><h3>100%</h3><p>Satisfaction</p></div>
     </div>
   </section>
 
-  <!-- ===== CTA ===== -->
+  <!-- CALL TO ACTION -->
   <section class="cta">
     <div class="container">
-      <h2>Ready for a spotless, pest-free space?</h2>
-      <a href="contact.html" class="btn btn-light">Get Your Free Quote</a>
+      <h2>Ready for a Spotless, Pest‑Free Space?</h2>
+      <p>Call us today or request a free inspection.</p>
+      <a href="contact.html" class="btn btn-light">Contact Us Now</a>
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-grid">
       <div>
-        <a href="index.html" class="logo logo-footer">
-          <img src="images/logo.jpeg" alt="PureGuard logo">
-          <span>Pure<span>Guard</span></span>
-        </a>
-        <p>Professional cleaning and pest control services you can rely on.</p>
+        <a href="index.html" class="logo"><img src="images/logo.png" alt="logo"><span>Pure<b>Guard</b></span></a>
+        <p>Clean spaces. Healthy lives.</p>
       </div>
       <div>
         <h4>Quick Links</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Our Services</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Our Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact Us</a>
       </div>
       <div>
         <h4>Contact</h4>
-        <ul>
-          <li>Phone: +254 700 000 000</li>
-          <li>Email: info@pureguard.co.ke</li>
-          <li>Nairobi, Kenya</li>
-        </ul>
+        <p>📞 +254 700 000 000</p>
+        <p>✉ info@pureguard.co.ke</p>
+        <p>📍 Nairobi, Kenya</p>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 PureGuard Cleaning &amp; Pest Control. All rights reserved.</p>
-    </div>
+    <p class="copy">&copy; 2026 PureGuard Cleaning & Pest Control. All rights reserved.</p>
   </footer>
 
-  <script>
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('navLinks');
-    hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
-  </script>
 </body>
 </html>
