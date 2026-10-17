@@ -5,95 +5,807 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Professional cleaning and pest control services for homes and businesses.">
-    <title>Cleaning & Pest Control | Home</title>
-    <link rel="stylesheet" href="style.css">
+    <title>CleanCare | Cleaning & Pest Control</title>
+
+    <style>
+        /* ===== GLOBAL STYLES ===== */
+        :root {
+            --green: #159447;
+            --dark-green: #086337;
+            --deep-green: #064527;
+            --mint: #eaf8ef;
+            --white: #ffffff;
+            --dark: #202b25;
+            --gray: #66736b;
+            --light: #f7faf8;
+            --gold: #f2c94c;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 85px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--dark);
+            line-height: 1.7;
+            background: var(--white);
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section {
+            padding: 85px 0;
+        }
+
+        .eyebrow {
+            color: var(--green);
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        h1, h2, h3 {
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: clamp(28px, 4vw, 42px);
+            margin-bottom: 18px;
+        }
+
+        .section-heading {
+            text-align: center;
+            max-width: 680px;
+            margin: 0 auto 45px;
+        }
+
+        .section-heading > p:last-child {
+            color: var(--gray);
+        }
+
+        /* ===== NAVIGATION ===== */
+        .header {
+            background: var(--white);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 3px 18px rgba(0, 0, 0, 0.07);
+        }
+
+        .navbar {
+            min-height: 82px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--dark-green);
+            font-size: 22px;
+            font-weight: 800;
+        }
+
+        .brand img {
+            width: 125px;
+            height: 62px;
+            object-fit: contain;
+        }
+
+        .brand-text {
+            display: none;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 27px;
+        }
+
+        .nav-links a {
+            font-size: 14px;
+            font-weight: 700;
+            transition: color .25s;
+        }
+
+        .nav-links a:hover {
+            color: var(--green);
+        }
+
+        .nav-links .nav-cta {
+            background: var(--green);
+            color: var(--white);
+            padding: 11px 20px;
+            border-radius: 5px;
+        }
+
+        .nav-links .nav-cta:hover {
+            background: var(--dark-green);
+        }
+
+        #menu-toggle {
+            position: absolute;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .menu-icon {
+            display: none;
+            font-size: 30px;
+            cursor: pointer;
+            color: var(--dark-green);
+            line-height: 1;
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            min-height: 590px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            color: var(--white);
+            background-color: var(--deep-green);
+            background-image:
+                linear-gradient(
+                    90deg,
+                    rgba(3, 51, 29, .93) 0%,
+                    rgba(3, 51, 29, .72) 52%,
+                    rgba(3, 51, 29, .20) 100%
+                ),
+                url("images/WhatsApp Image 2026-10-16 at 15.20.56 (1).jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-content {
+            padding-top: 85px;
+            padding-bottom: 85px;
+        }
+
+        .hero .eyebrow {
+            color: #b8f4cc;
+        }
+
+        .hero h1 {
+            max-width: 760px;
+            font-size: clamp(38px, 6vw, 66px);
+            letter-spacing: -1.5px;
+            line-height: 1.12;
+            margin-bottom: 22px;
+        }
+
+        .hero h1 span {
+            color: #9ee8b7;
+        }
+
+        .hero-description {
+            color: #eff8f1;
+            max-width: 590px;
+            font-size: 17px;
+            margin-bottom: 32px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        .btn {
+            display: inline-block;
+            border: 2px solid transparent;
+            padding: 13px 24px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: 800;
+            text-align: center;
+            transition: .25s;
+        }
+
+        .btn-primary {
+            background: var(--green);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background: #0c7839;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border-color: var(--white);
+            color: var(--white);
+        }
+
+        .btn-outline:hover {
+            background: var(--white);
+            color: var(--dark-green);
+        }
+
+        /* ===== TRUST BAR ===== */
+        .trust-bar {
+            background: var(--mint);
+            padding: 23px 0;
+        }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+
+        .trust-item {
+            color: var(--dark-green);
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .check {
+            color: var(--green);
+            font-size: 20px;
+            margin-right: 8px;
+        }
+
+        /* ===== ABOUT ===== */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-photo {
+            position: relative;
+        }
+
+        .about-photo img {
+            width: 100%;
+            height: 430px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .photo-badge {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: var(--white);
+            border-left: 5px solid var(--green);
+            padding: 14px 20px;
+            border-radius: 5px;
+            box-shadow: 0 5px 20px #00000012;
+        }
+
+        .photo-badge strong {
+            display: block;
+            color: var(--dark-green);
+        }
+
+        .photo-badge span {
+            color: var(--gray);
+            font-size: 13px;
+        }
+
+        .about-text p:not(.eyebrow) {
+            color: var(--gray);
+            margin-bottom: 17px;
+        }
+
+        .text-link {
+            display: inline-block;
+            color: var(--green);
+            font-weight: 800;
+            margin-top: 8px;
+        }
+
+        .text-link:hover {
+            color: var(--dark-green);
+        }
+
+        /* ===== SERVICES ===== */
+        .services {
+            background: var(--light);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 22px;
+        }
+
+        .service-card {
+            background: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #edf1ed;
+            transition: transform .25s, box-shadow .25s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px #123a2014;
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 205px;
+            object-fit: cover;
+        }
+
+        .service-info {
+            padding: 22px;
+        }
+
+        .service-number {
+            color: var(--green);
+            font-size: 12px;
+            font-weight: 800;
+        }
+
+        .service-info h3 {
+            font-size: 19px;
+            margin: 8px 0 12px;
+        }
+
+        .service-info p {
+            color: var(--gray);
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+
+        .service-info a {
+            color: var(--green);
+            font-size: 13px;
+            font-weight: 800;
+        }
+
+        /* ===== GREEN CALL TO ACTION ===== */
+        .cta {
+            background: linear-gradient(120deg, var(--dark-green), #138d4a);
+            padding: 55px 0;
+            color: var(--white);
+        }
+
+        .cta-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .cta .eyebrow {
+            color: #b8f4cc;
+        }
+
+        .cta h2 {
+            margin-bottom: 10px;
+        }
+
+        .cta p:not(.eyebrow) {
+            color: #e2f4e8;
+        }
+
+        .btn-light {
+            background: var(--white);
+            color: var(--dark-green);
+            white-space: nowrap;
+        }
+
+        .btn-light:hover {
+            background: var(--gold);
+            color: var(--dark);
+        }
+
+        /* ===== GALLERY ===== */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: 255px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform .25s;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.025);
+        }
+
+        /* ===== CONTACT ===== */
+        .contact {
+            background: var(--mint);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .contact-intro {
+            color: var(--gray);
+            margin-bottom: 25px;
+        }
+
+        .contact-detail {
+            margin: 20px 0;
+        }
+
+        .contact-detail strong {
+            display: block;
+            color: var(--dark-green);
+        }
+
+        .contact-detail span {
+            color: var(--gray);
+            overflow-wrap: anywhere;
+        }
+
+        .contact-form {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 25px #00000008;
+        }
+
+        .contact-form h3 {
+            font-size: 24px;
+            margin-bottom: 22px;
+        }
+
+        .contact-form label {
+            display: block;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .contact-form input,
+        .contact-form select,
+        .contact-form textarea {
+            display: block;
+            width: 100%;
+            padding: 13px;
+            margin-bottom: 17px;
+            border: 1px solid #d8e2da;
+            border-radius: 5px;
+            background: var(--white);
+            color: var(--dark);
+            font: inherit;
+        }
+
+        .contact-form input:focus,
+        .contact-form select:focus,
+        .contact-form textarea:focus {
+            outline: 2px solid var(--green);
+            border-color: var(--green);
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+        }
+
+        .contact-form button {
+            width: 100%;
+            font-family: inherit;
+            cursor: pointer;
+        }
+
+        .form-note {
+            font-size: 12px;
+            color: var(--gray);
+            margin-top: 12px;
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background: #063c24;
+            color: var(--white);
+            padding: 27px 0;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .footer p,
+        .footer a {
+            color: #e0eee5;
+            font-size: 13px;
+        }
+
+        .footer a:hover {
+            color: #a8edbd;
+        }
+
+        /* ===== TABLET ===== */
+        @media (max-width: 1000px) {
+            .nav-links {
+                gap: 15px;
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .about-grid,
+            .contact-grid {
+                gap: 35px;
+            }
+        }
+
+        /* ===== MOBILE ===== */
+        @media (max-width: 720px) {
+            .container {
+                width: 92%;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+
+            .navbar {
+                min-height: 75px;
+                flex-wrap: wrap;
+            }
+
+            .brand img {
+                width: 110px;
+                height: 58px;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                align-items: stretch;
+                width: 100%;
+                gap: 0;
+                padding-bottom: 15px;
+            }
+
+            #menu-toggle:checked ~ .nav-links {
+                display: flex;
+            }
+
+            .nav-links a {
+                padding: 12px 5px;
+                border-top: 1px solid #edf1ed;
+            }
+
+            .nav-links .nav-cta {
+                text-align: center;
+                margin-top: 8px;
+            }
+
+            .hero {
+                min-height: 510px;
+                background-position: center;
+            }
+
+            .hero-content {
+                padding-top: 65px;
+                padding-bottom: 65px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero-description {
+                font-size: 15px;
+            }
+
+            .trust-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+                text-align: left;
+            }
+
+            .about-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+
+            .about-photo img {
+                height: 320px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-card img {
+                height: 240px;
+            }
+
+            .cta-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 10px;
+            }
+
+            .gallery-grid img {
+                height: 175px;
+            }
+
+            .contact-form {
+                padding: 22px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        @media (max-width: 380px) {
+            .hero h1 {
+                font-size: 33px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid img {
+                height: 230px;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-    <!-- HEADER -->
+    <!-- HEADER AND NAVIGATION -->
     <header class="header">
         <div class="container navbar">
-            <a href="#home" class="logo">
+            <a href="#home" class="brand" aria-label="Home">
                 <img src="images/logo.jpeg" alt="Company logo">
+                <span class="brand-text">CleanCare</span>
             </a>
 
             <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-icon" aria-label="Toggle navigation">
+            <label for="menu-toggle" class="menu-icon" aria-label="Open navigation">
                 ☰
             </label>
 
-            <nav class="nav-links">
+            <nav class="nav-links" aria-label="Main navigation">
                 <a href="#home">Home</a>
                 <a href="#about">About Us</a>
                 <a href="#services">Services</a>
                 <a href="#gallery">Gallery</a>
-                <a href="#contact" class="nav-contact">Contact Us</a>
+                <a href="#contact" class="nav-cta">Contact Us</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <!-- HERO / HOMEPAGE BANNER -->
+        <!-- HOMEPAGE BANNER -->
         <section class="hero" id="home">
-            <div class="hero-overlay"></div>
             <div class="container hero-content">
                 <p class="eyebrow">CLEAN SPACES. HEALTHY LIVING.</p>
-                <h1>Professional Cleaning & Pest Control Services</h1>
-                <p class="hero-text">
-                    We help keep your home and workplace clean, fresh,
-                    hygienic and free from unwanted pests.
+
+                <h1>
+                    A Cleaner Space.<br>
+                    A <span>Healthier Life.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Professional cleaning and pest control solutions
+                    for homes, offices and commercial properties.
+                    We help you enjoy cleaner, fresher spaces.
                 </p>
 
                 <div class="hero-buttons">
-                    <a href="#services" class="btn btn-primary">Explore Services</a>
-                    <a href="#contact" class="btn btn-outline">Get in Touch</a>
+                    <a href="#services" class="btn btn-primary">
+                        Explore Our Services →
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        Get in Touch
+                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- TRUST STRIP -->
-        <section class="trust-strip">
-            <div class="container trust-items">
-                <div>
-                    <span class="trust-icon">✓</span>
-                    <span>Reliable Service</span>
+        <!-- TRUST BAR -->
+        <section class="trust-bar">
+            <div class="container trust-grid">
+                <div class="trust-item">
+                    <span class="check">✓</span> Reliable Service
                 </div>
-                <div>
-                    <span class="trust-icon">✦</span>
-                    <span>Attention to Detail</span>
+                <div class="trust-item">
+                    <span class="check">✓</span> Attention to Detail
                 </div>
-                <div>
-                    <span class="trust-icon">✓</span>
-                    <span>Homes & Businesses</span>
+                <div class="trust-item">
+                    <span class="check">✓</span> Homes & Businesses
                 </div>
             </div>
         </section>
 
-        <!-- ABOUT -->
-        <section class="section about" id="about">
+        <!-- ABOUT US -->
+        <section class="section" id="about">
             <div class="container about-grid">
-                <div class="about-image">
-                    <img src="images/Team.jpg" alt="Our cleaning team">
-                    <div class="image-label">
-                        <strong>Clean Spaces,</strong>
-                        <span>Better Living</span>
+                <div class="about-photo">
+                    <img
+                        src="images/Team.jpg"
+                        alt="Our cleaning team">
+
+                    <div class="photo-badge">
+                        <strong>Clean Spaces, Better Living</strong>
+                        <span>Your space deserves the best care.</span>
                     </div>
                 </div>
 
-                <div class="about-content">
-                    <p class="eyebrow">WELCOME TO OUR COMPANY</p>
-                    <h2>Your Trusted Partner in Cleaning & Hygiene</h2>
+                <div class="about-text">
+                    <p class="eyebrow">ABOUT OUR COMPANY</p>
+                    <h2>We Care About Your Space</h2>
+
                     <p>
-                        We provide cleaning and pest control services designed
-                        to help homes, offices and commercial spaces stay clean,
-                        comfortable and hygienic.
+                        We provide cleaning and pest control services
+                        to help homes and businesses maintain cleaner,
+                        healthier and more comfortable environments.
                     </p>
+
                     <p>
-                        From everyday cleaning to detailed deep cleaning and
-                        pest management, we focus on quality, care and dependable
-                        service.
+                        From regular home cleaning to office cleaning,
+                        deep cleaning and pest management, we focus on
+                        care, quality and attention to detail.
                     </p>
-                    <a href="#contact" class="text-link">Talk to Our Team →</a>
+
+                    <a href="#contact" class="text-link">
+                        Let's Talk About Your Needs →
+                    </a>
                 </div>
             </div>
         </section>
@@ -102,20 +814,27 @@
         <section class="section services" id="services">
             <div class="container">
                 <div class="section-heading">
-                    <p class="eyebrow">WHAT WE DO</p>
-                    <h2>Our Professional Services</h2>
-                    <p>Practical solutions for cleaner, healthier spaces.</p>
+                    <p class="eyebrow">OUR SERVICES</p>
+                    <h2>Cleaning Solutions for Every Space</h2>
+                    <p>
+                        Explore our services and find the right solution
+                        for your home or business.
+                    </p>
                 </div>
 
-                <div class="service-grid">
+                <div class="services-grid">
                     <article class="service-card">
                         <img
                             src="images/WhatsApp Image 2026-10-16 at 14.39.07.jpg"
-                            alt="Cleaning service">
+                            alt="Residential cleaning">
+
                         <div class="service-info">
-                            <span class="service-number">01</span>
-                            <h3>Residential Cleaning</h3>
-                            <p>Keep your home fresh, tidy and comfortable.</p>
+                            <span class="service-number">SERVICE 01</span>
+                            <h3>Home Cleaning</h3>
+                            <p>
+                                Enjoy a fresh, tidy and comfortable
+                                home with professional cleaning.
+                            </p>
                             <a href="#contact">Enquire Now →</a>
                         </div>
                     </article>
@@ -123,11 +842,15 @@
                     <article class="service-card">
                         <img
                             src="images/WhatsApp Image 2026-10-16 at 14.41.05.jpg"
-                            alt="Professional cleaning work">
+                            alt="Office cleaning">
+
                         <div class="service-info">
-                            <span class="service-number">02</span>
+                            <span class="service-number">SERVICE 02</span>
                             <h3>Office Cleaning</h3>
-                            <p>Maintain a clean and welcoming workplace.</p>
+                            <p>
+                                Help create a clean and welcoming
+                                environment for your workplace.
+                            </p>
                             <a href="#contact">Enquire Now →</a>
                         </div>
                     </article>
@@ -135,11 +858,15 @@
                     <article class="service-card">
                         <img
                             src="images/WhatsApp Image 2026-10-16 at 14.43.56.jpg"
-                            alt="Deep cleaning service">
+                            alt="Deep cleaning">
+
                         <div class="service-info">
-                            <span class="service-number">03</span>
+                            <span class="service-number">SERVICE 03</span>
                             <h3>Deep Cleaning</h3>
-                            <p>Give your space extra care and detailed cleaning.</p>
+                            <p>
+                                Detailed cleaning for spaces that
+                                need extra care and attention.
+                            </p>
                             <a href="#contact">Enquire Now →</a>
                         </div>
                     </article>
@@ -147,11 +874,15 @@
                     <article class="service-card">
                         <img
                             src="images/WhatsApp Image 2026-10-16 at 15.20.56.jpg"
-                            alt="Cleaning and hygiene service">
+                            alt="Cleaning and pest control">
+
                         <div class="service-info">
-                            <span class="service-number">04</span>
+                            <span class="service-number">SERVICE 04</span>
                             <h3>Pest Control</h3>
-                            <p>Get help managing unwanted pests in your space.</p>
+                            <p>
+                                Get help managing unwanted pests
+                                in your home or business.
+                            </p>
                             <a href="#contact">Enquire Now →</a>
                         </div>
                     </article>
@@ -163,42 +894,59 @@
         <section class="cta">
             <div class="container cta-content">
                 <div>
-                    <p class="eyebrow">READY FOR A FRESH START?</p>
-                    <h2>Let's Make Your Space Shine</h2>
-                    <p>Contact us to discuss your cleaning or pest control needs.</p>
+                    <p class="eyebrow">LET'S GET STARTED</p>
+                    <h2>Ready for a Cleaner Space?</h2>
+                    <p>
+                        Get in touch with us to discuss your cleaning
+                        or pest control requirements.
+                    </p>
                 </div>
-                <a href="#contact" class="btn btn-light">Request a Service</a>
+
+                <a href="#contact" class="btn btn-light">
+                    Request a Service →
+                </a>
             </div>
         </section>
 
         <!-- GALLERY -->
-        <section class="section gallery" id="gallery">
+        <section class="section" id="gallery">
             <div class="container">
                 <div class="section-heading">
-                    <p class="eyebrow">OUR WORK</p>
-                    <h2>A Look at What We Do</h2>
-                    <p>Explore some of our cleaning and service photos.</p>
+                    <p class="eyebrow">OUR GALLERY</p>
+                    <h2>A Glimpse of Our Work</h2>
+                    <p>
+                        Take a look at some of our cleaning and
+                        service photos.
+                    </p>
                 </div>
 
                 <div class="gallery-grid">
                     <img src="images/WhatsApp Image 2026-10-16 at 14.39.07 (2).jpg"
-                         alt="Cleaning project one">
+                         alt="Cleaning work photo 1">
+
                     <img src="images/WhatsApp Image 2026-10-16 at 14.39.07 (3).jpg"
-                         alt="Cleaning project two">
+                         alt="Cleaning work photo 2">
+
                     <img src="images/WhatsApp Image 2026-10-16 at 14.41.05 (1).jpg"
-                         alt="Cleaning project three">
+                         alt="Cleaning work photo 3">
+
                     <img src="images/WhatsApp Image 2026-10-16 at 14.43.56 (1).jpg"
-                         alt="Cleaning project four">
+                         alt="Cleaning work photo 4">
+
                     <img src="images/WhatsApp Image 2026-10-16 at 15.20.56 (1).jpg"
-                         alt="Cleaning project five">
+                         alt="Cleaning work photo 5">
+
                     <img src="images/WhatsApp Image 2026-10-16 at 15.20.56 (2).jpg"
-                         alt="Cleaning project six">
+                         alt="Cleaning work photo 6">
+
                     <img src="images/WhatsApp Image 2026-10-16 at 15.20.56 (3).jpg"
-                         alt="Cleaning project seven">
+                         alt="Cleaning work photo 7">
+
                     <img src="images/WhatsApp Image 2026-10-16 at 15.20.56 (4).jpg"
-                         alt="Cleaning project eight">
+                         alt="Cleaning work photo 8">
+
                     <img src="images/WhatsApp Image 2026-10-16 at 15.20.56 (5).jpg"
-                         alt="Cleaning project nine">
+                         alt="Cleaning work photo 9">
                 </div>
             </div>
         </section>
@@ -207,30 +955,34 @@
         <section class="section contact" id="contact">
             <div class="container contact-grid">
                 <div>
-                    <p class="eyebrow">GET IN TOUCH</p>
-                    <h2>Need a Cleaner, Healthier Space?</h2>
-                    <p>
-                        Tell us what you need, and get in touch with our team
-                        to discuss the right service for your property.
+                    <p class="eyebrow">CONTACT US</p>
+                    <h2>Let's Make Your Space Shine</h2>
+
+                    <p class="contact-intro">
+                        Have a cleaning or pest control requirement?
+                        Contact us to discuss your needs and arrange
+                        the right service.
                     </p>
 
-                    <!-- Replace these details with your actual contacts -->
                     <div class="contact-detail">
                         <strong>Phone</strong>
-                        <span>Add your business phone number</span>
+                        <span>Replace with your business phone number</span>
                     </div>
+
                     <div class="contact-detail">
                         <strong>Email</strong>
-                        <span>Add your business email</span>
+                        <span>Replace with your business email</span>
                     </div>
+
                     <div class="contact-detail">
                         <strong>Location</strong>
-                        <span>Add your service area</span>
+                        <span>Replace with your service area</span>
                     </div>
                 </div>
 
                 <form class="contact-form" action="#" method="get">
                     <h3>Send an Enquiry</h3>
+
                     <label for="name">Your Name</label>
                     <input type="text" id="name" name="name"
                            placeholder="Enter your name" required>
@@ -241,8 +993,8 @@
 
                     <label for="service">Service Needed</label>
                     <select id="service" name="service" required>
-                        <option value="">Choose a service</option>
-                        <option>Residential Cleaning</option>
+                        <option value="">Select a service</option>
+                        <option>Home Cleaning</option>
                         <option>Office Cleaning</option>
                         <option>Deep Cleaning</option>
                         <option>Pest Control</option>
@@ -251,13 +1003,15 @@
 
                     <label for="message">Your Message</label>
                     <textarea id="message" name="message" rows="4"
-                              placeholder="Tell us what you need"></textarea>
+                              placeholder="How can we help?"></textarea>
 
                     <button type="submit" class="btn btn-primary">
                         Send Enquiry
                     </button>
+
                     <p class="form-note">
-                        This demo form is not connected to an email service yet.
+                        The form needs a form service or backend
+                        before it can deliver enquiries.
                     </p>
                 </form>
             </div>
@@ -267,7 +1021,7 @@
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container footer-content">
-            <p>© 2026 Cleaning & Pest Control. All rights reserved.</p>
+            <p>© 2026 CleanCare. All rights reserved.</p>
             <a href="#home">Back to Top ↑</a>
         </div>
     </footer>
