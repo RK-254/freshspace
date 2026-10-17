@@ -1,327 +1,91 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="FreshSpace Hygiene & Pest Solutions offers professional cleaning and pest control for homes, offices and institutions in Kenya.">
-  <meta name="theme-color" content="#147d45">
-  <title>FreshSpace Hygiene & Pest Solutions | Professional Cleaning</title>
-  <link rel="stylesheet" href="style.css">
+  <title>About Us | FreshSpace Hygiene & Pest Solutions</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; line-height: 1.7; color: #26352c; }
+    header { padding: 18px 6%; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; box-shadow: 0 2px 8px #ddd; }
+    .brand { color: #176b45; font-size: 21px; font-weight: bold; text-decoration: none; }
+    nav { display: flex; gap: 18px; flex-wrap: wrap; }
+    nav a { color: #26352c; text-decoration: none; font-weight: bold; font-size: 14px; }
+    nav a:hover { color: #20a464; }
+    .hero { background: #176b45; color: white; padding: 65px 7%; text-align: center; }
+    .hero h1 { font-size: 38px; margin-bottom: 10px; }
+    main { max-width: 1000px; margin: auto; padding: 50px 7%; }
+    h2 { color: #176b45; margin-bottom: 12px; }
+    .content { margin-bottom: 32px; }
+    .values { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 25px; }
+    .card { background: #f2f8f4; padding: 24px; border-radius: 8px; }
+    .card h3 { color: #176b45; margin-bottom: 8px; }
+    .contact { background: #176b45; color: white; padding: 35px 7%; text-align: center; }
+    .contact a { display: inline-block; margin: 12px 6px 0; padding: 11px 18px; border-radius: 5px; background: white; color: #176b45; text-decoration: none; font-weight: bold; }
+    footer { background: #103d29; color: white; padding: 20px; text-align: center; }
+    @media(max-width: 600px) { header { flex-direction: column; } nav { justify-content: center; gap: 12px; } .hero h1 { font-size: 30px; } }
+  </style>
 </head>
-
 <body>
-
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="container header-inner">
-
-      <a class="brand" href="index.html" aria-label="FreshSpace Home">
-        <img
-          src="WhatsApp Image 2026-10-10 at 20.51.48 (1).jpeg"
-          alt="FreshSpace logo"
-          class="logo">
-        <span class="brand-name">
-          <strong>FreshSpace</strong>
-          <small>HYGIENE & PEST SOLUTIONS</small>
-        </span>
-      </a>
-
-      <input type="checkbox" id="menu-toggle" class="menu-toggle">
-      <label for="menu-toggle" class="menu-icon" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-
-      <nav class="navigation" aria-label="Main navigation">
-        <a href="index.html" class="active">Home</a>
-        <a href="about-us/">About Us</a>
-        <a href="our-services/">Our Services</a>
-        <a href="gallery/">Gallery</a>
-        <a href="contact-us/">Contact Us</a>
-        <a href="contact-us/" class="nav-quote">Get a Quote</a>
-      </nav>
-
-    </div>
+  <header>
+    <a class="brand" href="index.html">FreshSpace</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about-us.html">About Us</a>
+      <a href="our-services.html">Our Services</a>
+      <a href="contact-us.html">Contact Us</a>
+    </nav>
   </header>
 
+  <section class="hero">
+    <h1>About FreshSpace</h1>
+    <p>Committed to cleaner spaces and healthier environments.</p>
+  </section>
+
   <main>
+    <section class="content">
+      <h2>Who We Are</h2>
+      <p>FreshSpace Hygiene &amp; Pest Solutions is focused on providing hygiene, cleaning and pest management solutions for homes, offices and businesses. We aim to help our customers maintain cleaner, safer and more comfortable environments.</p>
+    </section>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-      <div class="hero-overlay"></div>
+    <section class="content">
+      <h2>Our Mission</h2>
+      <p>To provide dependable hygiene and pest solutions through professional service, customer care and attention to quality.</p>
+    </section>
 
-      <div class="container hero-content">
-        <span class="eyebrow">CLEAN SPACES. HEALTHIER LIVING.</span>
+    <section class="content">
+      <h2>Our Vision</h2>
+      <p>To be a trusted provider of hygiene and pest solutions, contributing to cleaner and healthier environments.</p>
+    </section>
 
-        <h1>
-          A Cleaner Space.<br>
-          A Healthier <span>Tomorrow.</span>
-        </h1>
-
-        <p>
-          Professional cleaning and reliable pest control solutions
-          for homes, offices, institutions and businesses across Kenya.
-        </p>
-
-        <div class="hero-buttons">
-          <a href="contact-us/" class="btn btn-primary">Request a Quote</a>
-          <a href="our-services/" class="btn btn-outline">Explore Our Services</a>
+    <section>
+      <h2>Our Values</h2>
+      <div class="values">
+        <div class="card">
+          <h3>Professionalism</h3>
+          <p>We aim to handle every task responsibly and carefully.</p>
         </div>
-
-        <div class="hero-points">
-          <span>✓ Professional Service</span>
-          <span>✓ Hygiene-Focused</span>
-          <span>✓ Customer Care</span>
+        <div class="card">
+          <h3>Customer Care</h3>
+          <p>We listen to customer needs and seek practical solutions.</p>
+        </div>
+        <div class="card">
+          <h3>Quality</h3>
+          <p>We focus on dependable service and attention to detail.</p>
         </div>
       </div>
     </section>
-
-    <!-- TRUST STRIP -->
-    <section class="trust-strip">
-      <div class="container trust-grid">
-        <div>
-          <strong>Residential</strong>
-          <span>Cleaning Solutions</span>
-        </div>
-        <div>
-          <strong>Commercial</strong>
-          <span>Office Cleaning</span>
-        </div>
-        <div>
-          <strong>Specialist</strong>
-          <span>Carpet & Sofa Care</span>
-        </div>
-        <div>
-          <strong>Pest Control</strong>
-          <span>Prevention & Treatment</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT INTRODUCTION -->
-    <section class="section about-section">
-      <div class="container about-grid">
-
-        <div class="about-image">
-          <img
-            src="images/Team.jpg"
-            alt="FreshSpace cleaning team">
-          <div class="image-caption">
-            <strong>Freshness You Can Trust</strong>
-            <span>Committed to cleaner environments</span>
-          </div>
-        </div>
-
-        <div class="about-content">
-          <span class="section-label">WELCOME TO FRESHSPACE</span>
-          <h2>Your Space Deserves the Best Care</h2>
-
-          <p>
-            At FreshSpace Hygiene & Pest Solutions, we help create
-            cleaner, more comfortable and hygienic environments.
-            We provide cleaning and pest control solutions tailored
-            to the needs of households, offices, institutions and businesses.
-          </p>
-
-          <p>
-            From everyday cleaning to deep cleaning of carpets and
-            upholstered furniture, our goal is to make maintaining
-            a clean space simpler and more convenient.
-          </p>
-
-          <a href="about-us/" class="text-link">Learn More About Us →</a>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section class="section services-section">
-      <div class="container">
-
-        <div class="section-heading">
-          <span class="section-label">WHAT WE DO</span>
-          <h2>Our Professional Services</h2>
-          <p>Practical cleaning and pest management solutions for different spaces.</p>
-        </div>
-
-        <div class="services-grid">
-
-          <article class="service-card">
-            <div class="service-icon" aria-hidden="true">⌂</div>
-            <h3>Residential Cleaning</h3>
-            <p>
-              Keep your home fresh and tidy with cleaning solutions
-              for living rooms, bedrooms, kitchens and bathrooms.
-            </p>
-            <a href="our-services/">Explore Service →</a>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon" aria-hidden="true">▤</div>
-            <h3>Office Cleaning</h3>
-            <p>
-              Maintain clean, welcoming workspaces for employees,
-              clients and visitors.
-            </p>
-            <a href="our-services/">Explore Service →</a>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon" aria-hidden="true">✦</div>
-            <h3>Carpet & Sofa Cleaning</h3>
-            <p>
-              Care for carpets and upholstered furniture by removing
-              accumulated dirt and everyday grime.
-            </p>
-            <a href="our-services/">Explore Service →</a>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon" aria-hidden="true">♧</div>
-            <h3>Pest Control</h3>
-            <p>
-              Get help managing common household and workplace pests
-              with appropriate pest control solutions.
-            </p>
-            <a href="our-services/">Explore Service →</a>
-          </article>
-
-        </div>
-
-        <div class="center-button">
-          <a href="our-services/" class="btn btn-primary">View All Services</a>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- WHY CHOOSE US -->
-    <section class="section why-section">
-      <div class="container why-grid">
-
-        <div>
-          <span class="section-label">WHY FRESHSPACE?</span>
-          <h2>More Than Just Cleaning</h2>
-          <p>
-            A clean environment supports comfort, confidence and
-            a better experience at home or at work.
-          </p>
-          <a href="contact-us/" class="btn btn-primary">Talk to Our Team</a>
-        </div>
-
-        <div class="benefits">
-          <div class="benefit">
-            <span class="check">✓</span>
-            <div>
-              <h3>Convenient Solutions</h3>
-              <p>Cleaning options suited to your space and needs.</p>
-            </div>
-          </div>
-
-          <div class="benefit">
-            <span class="check">✓</span>
-            <div>
-              <h3>Attention to Detail</h3>
-              <p>A focus on the areas that need proper care.</p>
-            </div>
-          </div>
-
-          <div class="benefit">
-            <span class="check">✓</span>
-            <div>
-              <h3>Cleaning & Pest Solutions</h3>
-              <p>Access both services through one company.</p>
-            </div>
-          </div>
-
-          <div class="benefit">
-            <span class="check">✓</span>
-            <div>
-              <h3>Customer-Focused Service</h3>
-              <p>Clear communication from enquiry to service delivery.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- CALL TO ACTION -->
-    <section class="cta-section">
-      <div class="container cta-inner">
-        <div>
-          <span class="section-label">LET'S GET STARTED</span>
-          <h2>Ready for a Cleaner, Fresher Space?</h2>
-          <p>Contact FreshSpace today to discuss your cleaning or pest control needs.</p>
-        </div>
-
-        <div class="cta-buttons">
-          <a href="contact-us/" class="btn btn-light">Request a Quote</a>
-          <a
-            href="https://wa.me/254181189836?text=Hello%20FreshSpace%2C%20I%20would%20like%20to%20enquire%20about%20your%20services."
-            class="btn btn-whatsapp"
-            target="_blank"
-            rel="noopener noreferrer">Chat on WhatsApp</a>
-        </div>
-      </div>
-    </section>
-
   </main>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
+  <section class="contact">
+    <h2 style="color:white">Let's Talk</h2>
+    <p>Contact us to discuss your hygiene or pest management needs.</p>
+    <a href="tel:+254181189836">Call Us</a>
+    <a href="https://wa.me/254181189836">WhatsApp Us</a>
+  </section>
 
-      <div class="footer-brand">
-        <a class="brand footer-logo" href="index.html">
-          <img
-            src="WhatsApp Image 2026-10-10 at 20.51.48 (1).jpeg"
-            alt="FreshSpace logo">
-          <span class="brand-name">
-            <strong>FreshSpace</strong>
-            <small>HYGIENE & PEST SOLUTIONS</small>
-          </span>
-        </a>
-        <p>Creating cleaner spaces and healthier environments.</p>
-      </div>
-
-      <div>
-        <h3>Quick Links</h3>
-        <a href="index.html">Home</a>
-        <a href="about-us/">About Us</a>
-        <a href="our-services/">Our Services</a>
-        <a href="gallery/">Gallery</a>
-        <a href="contact-us/">Contact Us</a>
-      </div>
-
-      <div>
-        <h3>Our Services</h3>
-        <a href="our-services/">Residential Cleaning</a>
-        <a href="our-services/">Office Cleaning</a>
-        <a href="our-services/">Carpet & Sofa Cleaning</a>
-        <a href="our-services/">Pest Control</a>
-      </div>
-
-      <div>
-        <h3>Contact Us</h3>
-        <p>Phone: +254 181 189836</p>
-        <a href="https://wa.me/254181189836"
-           target="_blank"
-           rel="noopener noreferrer">WhatsApp Us</a>
-        <a href="contact-us/">Request a Quote</a>
-      </div>
-
-    </div>
-
-    <div class="footer-bottom">
-      <div class="container">
-        <p>© <span id="year">2026</span> FreshSpace Hygiene & Pest Solutions. All rights reserved.</p>
-      </div>
-    </div>
+  <footer>
+    <p>&copy; 2026 FreshSpace Hygiene &amp; Pest Solutions</p>
   </footer>
-
 </body>
 </html>
