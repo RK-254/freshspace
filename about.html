@@ -3,92 +3,157 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Us - FreshSpace Nairobi</title>
+<title>FreshSpace Nairobi - Professional Cleaning & Pest Control</title>
 <link rel="stylesheet" href="style.css">
 <style>
-.about-hero{background:#0a5c2d;color:#fff;padding:60px 5%;text-align:center}
-.about-hero h1{font-size:38px}
-.about-wrap{max-width:1100px;margin:0 auto;padding:40px 5%}
-.team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin:30px 0}
-.team-card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,0.06);border:1px solid #eee}
-.team-card img{width:100%;height:200px;object-fit:cover;display:block}
-.team-card .txt{padding:15px}
-.team-card h3{color:#0a5c2d;font-size:16px}
-.team-card p{color:#666;font-size:14px;margin-top:6px}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin:40px 0;text-align:center}
-.stat-box{background:#fff;padding:20px;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,0.05)}
-.stat-box h2{color:#0a5c2d;font-size:32px}
-@media(max-width:700px){.stats{grid-template-columns:1fr 1fr}}
+/* FIX LOGO SIZE - 220px */
+.logo-area img{width:220px!important;height:auto!important;max-height:80px;object-fit:contain}
+
+/* HERO */
+.hero{padding:60px 5% 40px;display:grid;grid-template-columns:1.2fr 0.8fr;gap:30px;align-items:center;background:linear-gradient(180deg,#f0faf3 0%,#fff 100%)}
+.hero h1{font-size:42px;font-weight:900;color:#0a5c2d;line-height:1.1}
+.hero h1 span{color:#111}
+.hero p{color:#444;font-size:17px;line-height:1.7;margin-top:12px}
+.hero-btns{margin-top:20px;display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:30px;font-weight:800;font-size:14px;text-decoration:none;transition:0.2s}
+.btn-green{background:#0a5c2d;color:#fff}
+.btn-wa{background:#25D366;color:#fff}
+.btn-outline{background:#fff;color:#0a5c2d;border:2px solid #0a5c2d}
+.hero-img{width:100%;height:380px;object-fit:cover;border-radius:18px;box-shadow:0 15px 35px rgba(0,0,0,0.12)}
+
+/* SERVICES - PICTURE + TITLE + PARAGRAPH */
+.section-title{text-align:center;padding:40px 5% 10px}
+.section-title h2{font-size:30px;color:#0a5c2d;font-weight:900}
+.section-title p{color:#777;font-size:15px;margin-top:6px}
+
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;padding:20px 5% 40px}
+.service-card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 6px 20px rgba(0,0,0,0.07);border:1px solid #eee;transition:0.3s;display:flex;flex-direction:column}
+.service-card:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(0,0,0,0.13)}
+.service-card img{width:100%;height:220px;object-fit:cover;display:block}
+.service-card .content{padding:18px 16px 22px;flex:1}
+.service-card h3{color:#0a5c2d;font-size:17px;font-weight:800;margin-bottom:8px}
+.service-card p{color:#555;font-size:14px;line-height:1.7;margin:0 0 14px}
+.service-card .link{color:#0a5c2d;font-weight:800;font-size:13px;text-decoration:none}
+
+.trust-bar{background:#111;color:#fff;padding:18px 5%;display:flex;justify-content:space-around;flex-wrap:wrap;gap:15px;font-size:14px;text-align:center;border-radius:14px;margin:10px 5%}
+.trust-bar strong{color:#25D366}
+
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px;padding:30px 5%;align-items:center}
+.why-box{background:#f8f9f8;padding:22px;border-radius:12px;border-left:4px solid #0a5c2d;margin:10px 0}
+.why-box h4{color:#111;font-size:15px}
+.why-box p{color:#666;font-size:13.5px;margin-top:5px;line-height:1.6}
+
+@media(max-width:850px){
+.hero{grid-template-columns:1fr;text-align:center}
+.hero-img{height:300px}
+.hero h1{font-size:32px}
+.why-grid{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
 
 <header>
-<div class="logo-area"><a href="index.html"><img src="images/logo.jpeg" alt="Logo"></a></div>
+<div class="logo-area"><a href="index.html"><img src="images/logo.jpeg" alt="FreshSpace Logo Nairobi"></a></div>
 <input type="checkbox" id="menu-toggle" class="menu-toggle">
 <label for="menu-toggle" class="hamburger">☰</label>
 <div class="nav-tabs">
-<a href="index.html">Home</a>
+<a href="index.html" class="active">Home</a>
 <a href="services.html">What We Do</a>
-<a href="about.html" class="active">About</a>
+<a href="about.html">About</a>
 <a href="contact.html">Contact</a>
 <a href="tel:+254181189836" class="phone-btn">📞 +254 181 189836</a>
 </div>
 </header>
 
-<div class="about-hero">
-<h1>About FreshSpace</h1>
-<p style="margin-top:10px;opacity:0.9">Nairobi's Trusted Cleaning & Pest Control Team</p>
+<div class="hero">
+<div>
+<span style="background:#e8f5e9;color:#0a5c2d;padding:6px 12px;border-radius:20px;font-size:12px;font-weight:800">🌱 NAIROBI STARTUP - SAME DAY SERVICE</span>
+<h1>Clean Space, <span>Fresh Start</span> - Nairobi's New Cleaning Team</h1>
+<p>We are FreshSpace - a new, equipped cleaning & pest control team in Nairobi. Owner-supervised, uniformed staff, safe chemicals. We come with everything - you just point.</p>
+<div class="hero-btns">
+<a href="https://wa.me/254181189836" class="btn btn-wa">💬 WhatsApp Booking</a>
+<a href="tel:+254181189836" class="btn btn-green">📞 Call Now</a>
+<a href="services.html" class="btn btn-outline">See Services</a>
+</div>
+<p style="font-size:12px;color:#888;margin-top:10px">📍 Serving: Westlands, Kilimani, Lavington, Parklands, Eastlands, South B/C, Syokimau</p>
+</div>
+<img src="images/van-service-team.jpeg" alt="FreshSpace Van Nairobi" class="hero-img">
 </div>
 
-<div class="about-wrap">
-
-<p style="font-size:17px;color:#333;line-height:1.7;text-align:center;max-width:700px;margin:0 auto">
-FreshSpace is a professional cleaning & pest control company based in Nairobi. We serve homes and offices across all Nairobi with same-day service. Our van comes to you fully equipped.
-</p>
-
-<div class="stats">
-<div class="stat-box"><h2>800+</h2><p>Happy Clients</p></div>
-<div class="stat-box"><h2>5+</h2><p>Years Experience</p></div>
-<div class="stat-box"><h2>4</h2><p>Expert Teams</p></div>
-<div class="stat-box"><h2>24/7</h2><p>Same Day</p></div>
+<div class="trust-bar">
+<div>✅ <strong>Same-Day</strong> Booking</div>
+<div>✅ <strong>Owner</strong> Supervised</div>
+<div>✅ <strong>Safe</strong> for Kids & Pets</div>
+<div>✅ <strong>No Hidden</strong> Charges</div>
 </div>
 
-<h2 style="text-align:center;color:#0a5c2d;margin-top:10px">Meet Our Teams</h2>
-<p style="text-align:center;color:#777;margin-bottom:10px">Real team - Real photos - Professional service</p>
-
-<div class="team-grid">
-<div class="team-card">
-<img src="images/office-cleaning-team.jpeg" alt="Office Cleaning Team">
-<div class="txt"><h3>🏢 Office Cleaning Team</h3><p>Professional, uniformed staff for offices, commercial buildings. Daily & weekly contracts.</p></div>
+<div class="section-title">
+<h2>What We Do</h2>
+<p>Picture + title + paragraph below - as you requested</p>
 </div>
 
-<div class="team-card">
-<img src="images/home-cleaning-team.jpeg" alt="Home Cleaning Team">
-<div class="txt"><h3>🏠 Home Cleaning Team</h3><p>Trained for deep house cleaning, apartments, mansions. Careful & thorough.</p></div>
-</div>
+<div class="services-grid">
 
-<div class="team-card">
-<img src="images/pest-control-team.jpeg" alt="Pest Control Team">
-<div class="txt"><h3>🐛 Pest Control Team</h3><p>Licensed pest control experts - Cockroaches, bedbugs, rats. Safe chemicals.</p></div>
-</div>
-
-<div class="team-card">
-<img src="images/van-service-team.jpeg" alt="Van Service Team">
-<div class="txt"><h3>🚐 Mobile Van Team</h3><p>Our van brings all equipment to your door - Fast response across Nairobi.</p></div>
+<div class="service-card">
+<img src="images/office-cleaning-team.jpeg" alt="Office Cleaning Nairobi">
+<div class="content">
+<h3>Office Cleaning</h3>
+<p>Professional daily and deep office cleaning for CBD, Westlands, Kilimani. We clean desks, floors, washrooms, kitchens, and sanitize door handles and switches. Early morning 6AM or evening slots with minimal disruption to work.</p>
+<a href="https://wa.me/254181189836?text=Hello%20FreshSpace%20Office%20Cleaning" class="link">Book Office Cleaning →</a>
 </div>
 </div>
 
-<div style="text-align:center;margin-top:40px;background:#fff;padding:30px;border-radius:12px">
-<h3 style="color:#0a5c2d">Need Our Team Today?</h3>
-<p style="color:#666;margin:10px 0">Call us - Van ready to come to you</p>
-<a href="tel:+254181189836" class="btn btn-green">📞 Call +254 181 189836</a>
-<a href="https://wa.me/254181189836" class="btn btn-wa" style="margin-left:8px">💬 WhatsApp</a>
+<div class="service-card">
+<img src="images/home-cleaning-team.jpeg" alt="Home Deep Cleaning Nairobi">
+<div class="content">
+<h3>Home Deep Cleaning</h3>
+<p>Complete home deep cleaning for apartments and bungalows. We move furniture, clean under beds, behind fridges, inside cabinets, scrub bathrooms, and mop balconies. Team comes with vacuum, pressure washer and detergents.</p>
+<a href="https://wa.me/254181189836?text=Hello%20FreshSpace%20Home%20Cleaning" class="link">Book Home Cleaning →</a>
+</div>
+</div>
+
+<div class="service-card">
+<img src="images/pest-control-team.jpeg" alt="Pest Control Nairobi">
+<div class="content">
+<h3>Pest Control & Fumigation</h3>
+<p>Licensed pest control for cockroaches, bedbugs, rats, and ants. We use KEBS approved chemicals safe for children and pets. 30-day guarantee, we come back free if pests return. For homes, rentals, and restaurants.</p>
+<a href="https://wa.me/254181189836?text=Hello%20FreshSpace%20Pest%20Control" class="link">Book Fumigation →</a>
+</div>
+</div>
+
+<div class="service-card">
+<img src="images/van-service-team.jpeg" alt="Move In Out Cleaning Nairobi">
+<div class="content">
+<h3>Move-In / Move-Out & Post Construction</h3>
+<p>Our van is a mobile cleaning unit - pressure washer, vacuum, chemicals inside. Perfect for end-of-tenancy, post-construction dust, and after renovation. We leave the house ready for painting or moving in same day.</p>
+<a href="https://wa.me/254181189836?text=Hello%20FreshSpace%20Move%20Cleaning" class="link">Book Van Service →</a>
+</div>
 </div>
 
 </div>
 
-<div class="footer"><p>FreshSpace Cleaning & Pest Control - Nairobi - 📞 +254 181 189836 - ✉️ langat2016@gmail.com</p></div>
+<div class="why-grid">
+<div>
+<h2 style="color:#0a5c2d;font-size:26px">Why Nairobi Homes Choose FreshSpace?</h2>
+<p style="color:#666;margin-top:8px;line-height:1.6">We are new, so we work harder to earn your 5-star review.</p>
+<div class="why-box"><h4>🚐 We Come Fully Equipped</h4><p>Water, vacuum, mop, chemicals - you provide nothing. Unlike others who ask for buckets.</p></div>
+<div class="why-box"><h4>👕 Uniformed & ID Verified Team</h4><p>No random people. Professional team in FreshSpace uniform with IDs.</p></div>
+<div class="why-box"><h4>💬 Direct Owner WhatsApp</h4><p>You chat directly with owner, not call center. Quick quotes, no delay.</p></div>
+</div>
+<div style="background:#0a5c2d;color:#fff;padding:30px;border-radius:18px">
+<h3 style="font-size:22px">Book Today - We Come Today</h3>
+<p style="opacity:0.9;margin-top:8px;font-size:14px;line-height:1.6">No need to book 3 days before. If you call before 2PM, we can come same day across Nairobi.</p>
+<div style="margin-top:20px;background:#fff;color:#111;padding:18px;border-radius:12px">
+<div style="display:flex;justify-content:space-between;padding:6px 0"><span>Mon-Sat</span><strong>6AM-8PM</strong></div>
+<div style="display:flex;justify-content:space-between;padding:6px 0"><span>Sunday</span><strong>7AM-6PM</strong></div>
+<div style="display:flex;justify-content:space-between;padding:6px 0"><span>WhatsApp</span><strong style="color:#0a5c2d">24/7 Online</strong></div>
+</div>
+<a href="https://wa.me/254181189836" class="btn btn-wa" style="width:100%;text-align:center;margin-top:18px;display:block;background:#fff;color:#0a5c2d">💬 Book on WhatsApp Now</a>
+</div>
+</div>
+
+<div class="footer"><p>FreshSpace Nairobi - Startup Cleaning & Pest Control | 📞 +254 181 189836 | ✉️ langat2016@gmail.com | Base Nairobi - All Areas</p></div>
 <a href="https://wa.me/254181189836" class="whatsapp-float">💬 WhatsApp</a>
 
 </body>
