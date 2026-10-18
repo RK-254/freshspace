@@ -2,6 +2,9 @@
 body{font-family:'Segoe UI',Arial,sans-serif;line-height:1.6;color:#222;background:#fff}
 header{background:#fff;padding:0 5%;display:flex;justify-content:space-between;align-items:center;box-shadow:0 3px 18px rgba(0,0,0,0.1);position:sticky;top:0;z-index:100;min-height:85px}
 .logo-area img{height:65px;width:auto;object-fit:contain;border-radius:8px}
+.logo-area a{display:inline-block;cursor:pointer}
+.logo-area img{cursor:pointer;transition:transform 0.2s}
+.logo-area img:hover{transform:scale(1.05)}
 .nav-tabs{display:flex;align-items:center;gap:4px}
 .nav-tabs a{padding:10px 16px;text-decoration:none;color:#333;font-weight:700;font-size:16px;border-radius:8px;transition:0.2s}
 .nav-tabs a:hover{background:#e8f5e9;color:#0a5c2d}
