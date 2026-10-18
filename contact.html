@@ -8,9 +8,9 @@
 .form-box{background:#fff;padding:28px;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.08);max-width:600px;margin:0 auto;text-align:left}
 .form-box label{font-weight:700;font-size:14px;color:#333;margin-top:14px;display:block}
 .form-box input, .form-box select, .form-box textarea{width:100%;padding:13px;border:1px solid #ddd;border-radius:8px;margin-top:6px;font-size:15px;font-family:inherit}
-.form-box textarea{height:90px;resize:vertical}
-.submit-btn{width:100%;background:#25D366;color:#fff;border:none;padding:14px;border-radius:8px;font-weight:800;font-size:16px;cursor:pointer;margin-top:18px}
-.submit-btn:hover{background:#1eb954}
+.form-box textarea{height:95px;resize:vertical}
+.submit-btn{width:100%;background:#0a5c2d;color:#fff;border:none;padding:14px;border-radius:8px;font-weight:800;font-size:16px;cursor:pointer;margin-top:18px}
+.submit-btn:hover{background:#2f9e44}
 </style>
 </head>
 <body>
@@ -30,56 +30,62 @@
 <section style="padding:50px 5%;background:#f8f8f8">
 <div style="max-width:1150px;margin:0 auto">
 <h1 style="font-size:40px;color:#0a5c2d;text-align:center">Contact Us</h1>
-<p style="text-align:center;color:#555;font-size:18px;margin:10px 0 35px">Fill form → WhatsApp us directly - reply in 2 mins</p>
+<p style="text-align:center;color:#555;font-size:18px;margin:10px 0 35px">Fill form → We reply in 5 mins to langat2016@gmail.com</p>
 
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start">
-<!-- FORM -->
-<div class="form-box">
-<h3 style="color:#0a5c2d;margin-bottom:10px">💬 Get Free Quote on WhatsApp</h3>
+
+<form class="form-box" action="https://formsubmit.co/langat2016@gmail.com" method="POST">
+<h3 style="color:#0a5c2d;margin-bottom:10px">📧 Get Free Quote</h3>
+
+<input type="hidden" name="_subject" value="NEW QUOTE - FreshSpace Website">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_next" value="https://rk-254.github.io/freshspace/thankyou.html">
+
 <label>Your Name</label>
-<input type="text" id="name" placeholder="e.g. John Kamau">
+<input type="text" name="Name" required placeholder="e.g. John Kamau">
+
 <label>Your Phone</label>
-<input type="tel" id="phone" placeholder="e.g. 0712 345 678">
+<input type="tel" name="Phone" required placeholder="e.g. 0712 345 678">
+
+<label>Your Email</label>
+<input type="email" name="Email" required placeholder="e.g. john@gmail.com">
+
 <label>Service Needed</label>
-<select id="service">
+<select name="Service">
 <option value="Office Cleaning">🏢 Office Cleaning</option>
 <option value="Home Cleaning">🏠 Home Cleaning</option>
 <option value="Pest Control">🐛 Pest Control</option>
 <option value="Deep Cleaning">✨ Deep Cleaning</option>
-<option value="Move In/Out Cleaning">📦 Move In/Out</option>
+<option value="Move In/Out">📦 Move In/Out Cleaning</option>
 <option value="Van Service">🚐 Van Service</option>
 </select>
-<label>Area in Nairobi</label>
-<input type="text" id="area" placeholder="e.g. Westlands, CBD, Karen">
-<label>Message</label>
-<textarea id="msg" placeholder="Tell us rooms, size, pest type..."></textarea>
-<button class="submit-btn" onclick="sendToWA()">Send to WhatsApp →</button>
-<p style="font-size:12px;color:#888;text-align:center;margin-top:10px">This opens WhatsApp - no email needed</p>
-</div>
 
-<!-- CONTACT CARDS -->
+<label>Message</label>
+<textarea name="Message" required placeholder="Tell us: area in Nairobi, house size, pest type..."></textarea>
+
+<button type="submit" class="submit-btn">Send</button>
+<p style="font-size:12px;color:#888;text-align:center;margin-top:10px">Sends to langat2016@gmail.com - Secure & private</p>
+</form>
+
 <div>
-<div style="background:#fff;padding:22px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.08);margin-bottom:16px"><h3 style="color:#0a5c2d">📞 Call Direct</h3><p style="font-size:22px;font-weight:800;margin:8px 0">+254 181 189836</p><a href="tel:+254181189836" class="btn btn-green" style="display:block;text-align:center">Call Now</a></div>
-<div style="background:#fff;padding:22px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.08);margin-bottom:16px"><h3 style="color:#0a5c2d">💬 WhatsApp Chat</h3><p style="margin:8px 0">Fast reply 7 days</p><a href="https://wa.me/254181189836" class="btn btn-wa" style="display:block;text-align:center">Open WhatsApp</a></div>
-<div style="background:#0a5c2d;color:#fff;padding:22px;border-radius:12px"><h3>📍 Nairobi Coverage</h3><p style="margin-top:8px">CBD, Westlands, Karen, Parklands, Lavington, Eastlands, Syokimau, All Nairobi - Van comes to you, same day.</p></div>
+<div style="background:#fff;padding:22px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.08);margin-bottom:16px">
+<h3 style="color:#0a5c2d">📞 Call Direct</h3>
+<p style="font-size:22px;font-weight:800;margin:8px 0">+254 181 189836</p>
+<p style="color:#555">Mon-Sun 6am-9pm</p>
+<a href="tel:+254181189836" class="btn btn-green" style="display:block;text-align:center;margin-top:12px">Call Now</a>
+</div>
+<div style="background:#0a5c2d;color:#fff;padding:22px;border-radius:12px">
+<h3>📍 Nairobi Coverage</h3>
+<p style="margin-top:8px">CBD, Westlands, Karen, Parklands, Lavington, Eastlands, Syokimau & All Nairobi.</p>
+<p style="margin-top:12px">🚐 Van comes to you - same day</p>
+<p style="margin-top:12px">💬 WhatsApp: <a href="https://wa.me/254181189836" style="color:#25D366;font-weight:800;text-decoration:none">Click to Chat</a></p>
+</div>
 </div>
 </div>
 </div>
 </section>
 
-<div class="footer"><p>FreshSpace - Nairobi - 📞 +254 181 189836 - WhatsApp 7 Days</p></div>
-<a href="https://wa.me/254181189836" class="whatsapp-float">💬 WhatsApp</a>
-
-<script>
-function sendToWA(){
-let n=document.getElementById('name').value||'Customer';
-let p=document.getElementById('phone').value||'Not given';
-let s=document.getElementById('service').value;
-let a=document.getElementById('area').value||'Nairobi';
-let m=document.getElementById('msg').value||'Need quote';
-let text=`Hello FreshSpace 👋%0A%0A*New Quote Request*%0A%0A👤 Name: ${n}%0A📞 Phone: ${p}%0A🔧 Service: ${s}%0A📍 Area: ${a}%0A%0A💬 Message: ${m}%0A%0AFrom website: freshspace`;
-window.open(`https://wa.me/254181189836?text=${text}`,'_blank');
-}
-</script>
+<div class="footer"><p>FreshSpace Cleaning & Pest Control - Nairobi - 📞 +254 181 189836 - ✉️ langat2016@gmail.com</p></div>
 </body>
 </html>
