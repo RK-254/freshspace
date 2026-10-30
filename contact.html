@@ -5,13 +5,12 @@
 <title>Contact - FreshSpace Cleaning service</title>
 <link rel="stylesheet" href="style.css">
 <style>
-.logo-area img{width:220px!important;height:auto!important;max-height:80px;object-fit:contain}
 .form-box{background:#fff;padding:28px;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.08);max-width:600px;margin:0 auto;text-align:left}
 .form-box label{font-weight:700;font-size:14px;color:#333;margin-top:14px;display:block}
 .form-box input, .form-box select, .form-box textarea{width:100%;padding:13px;border:1px solid #ddd;border-radius:8px;margin-top:6px;font-size:15px;font-family:inherit}
 .form-box textarea{height:95px;resize:vertical}
-.submit-btn{width:100%;background:#0a5c2d;color:#fff;border:none;padding:14px;border-radius:8px;font-weight:800;font-size:16px;cursor:pointer;margin-top:18px}
-.submit-btn:hover{background:#2f9e44}
+.submit-btn{width:100%;background:#25D366;color:#fff;border:none;padding:14px;border-radius:8px;font-weight:800;font-size:16px;cursor:pointer;margin-top:18px}
+.submit-btn:hover{background:#1fb354}
 </style>
 </head>
 <body>
@@ -28,31 +27,28 @@
 <a href="tel:+254181189836" class="phone-btn">📞 +254 181 189836</a>
 </div>
 </header>
+
 <section style="padding:50px 5%;background:#f8f8f8">
 <div style="max-width:1150px;margin:0 auto">
 <h1 style="font-size:40px;color:#0a5c2d;text-align:center">Contact Us</h1>
-<p style="text-align:center;color:#555;font-size:18px;margin:10px 0 35px">Fill form → We reply in 5 mins</p>
+<p style="text-align:center;color:#555;font-size:18px;margin:10px 0 35px">Fill form → We reply on WhatsApp in 5 mins</p>
 
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start">
 
-<form class="form-box" action="https://formsubmit.co/langat2016@gmail.com" method="POST">
+<form class="form-box" onsubmit="sendToWhatsApp(event)">
 <h3 style="color:#0a5c2d;margin-bottom:10px">📧 Get Free Quote</h3>
 
-<input type="hidden" name="_subject" value="NEW QUOTE - FreshSpace Website">
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_template" value="table">
-
 <label>Your Name</label>
-<input type="text" name="Name" required placeholder="e.g. John Kamau">
+<input type="text" id="wName" required placeholder="e.g. John Kamau">
 
 <label>Your Phone</label>
-<input type="tel" name="Phone" required placeholder="e.g. 0712 345 678">
+<input type="tel" id="wPhone" required placeholder="e.g. 0712 345 678">
 
 <label>Your Email</label>
-<input type="email" name="Email" required placeholder="e.g. john@gmail.com">
+<input type="email" id="wEmail" required placeholder="e.g. john@gmail.com">
 
 <label>Service Needed</label>
-<select name="Service">
+<select id="wService">
 <option value="Office Cleaning">🏢 Office Cleaning</option>
 <option value="Home Cleaning">🏠 Home Cleaning</option>
 <option value="Pest Control">🐛 Pest Control</option>
@@ -62,10 +58,10 @@
 </select>
 
 <label>Message</label>
-<textarea name="Message" required placeholder="Tell us: location, house size, pest type..."></textarea>
+<textarea id="wMessage" required placeholder="Tell us: location, house size, pest type..."></textarea>
 
-<button type="submit" class="submit-btn">Send Message</button>
-<p style="font-size:12px;color:#888;margin-top:10px;text-align:center">We will reply by email & WhatsApp in 5 mins</p>
+<button type="submit" class="submit-btn">💬 Send to WhatsApp</button>
+<p style="font-size:12px;color:#888;margin-top:10px;text-align:center">No server needed - goes direct to our phone</p>
 </form>
 
 <div>
@@ -75,13 +71,11 @@
 <p style="color:#555">Mon-Sun 6am-9pm</p>
 <a href="tel:+254181189836" style="display:block;text-align:center;margin-top:12px;background:#0a5c2d;color:#fff;padding:12px;border-radius:8px;text-decoration:none;font-weight:800">Call Now</a>
 </div>
-
 <div style="background:#fff;padding:22px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.08);margin-bottom:16px">
 <h3 style="color:#0a5c2d">💬 WhatsApp Chat</h3>
 <p style="color:#555;margin:8px 0">Fast reply 7 days - 2 mins</p>
 <a href="https://wa.me/254181189836" style="display:block;text-align:center;background:#25D366;color:#fff;padding:12px;border-radius:8px;text-decoration:none;font-weight:800">Chat on WhatsApp</a>
 </div>
-
 <div style="background:#0a5c2d;color:#fff;padding:22px;border-radius:12px">
 <h3>📍 Nairobi Coverage</h3>
 <p style="margin-top:8px">KSTVET and its surrounding areas.</p>
@@ -93,17 +87,18 @@
 </section>
 
 <div class="footer"><p>FreshSpace Cleaning & Pest Control - Nairobi - 📞 +254 181 189836 - ✉️ langat2016@gmail.com</p></div>
-<a href="https://wa.me/254181189836" class="whatsapp-float">💬 WhatsApp</a>
+
 <script>
-document.addEventListener('DOMContentLoaded', () => {
-  const links = document.querySelectorAll('.nav-tabs a:not(.phone-btn)');
-  const page = window.location.pathname.split('/').pop() || 'index.html';
-  links.forEach(link => {
-    const href = link.getAttribute('href');
-    link.classList.remove('active');
-    if(href === page || (page === '' && href === 'index.html')){link.classList.add('active')}
-  });
-});
+function sendToWhatsApp(e){
+e.preventDefault();
+var name=document.getElementById('wName').value;
+var phone=document.getElementById('wPhone').value;
+var email=document.getElementById('wEmail').value;
+var service=document.getElementById('wService').value;
+var msg=document.getElementById('wMessage').value;
+var text=`*NEW QUOTE - FreshSpace*%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Email:* ${email}%0A*Service:* ${service}%0A*Message:* ${msg}`;
+window.open(`https://wa.me/254181189836?text=${text}`,'_blank');
+}
 </script>
 </body>
 </html>
