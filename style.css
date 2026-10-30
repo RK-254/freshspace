@@ -30,10 +30,10 @@ font-size:14px;
 padding:8px 14px;
 border-radius:20px;
 transition:0.2s;
-}
 .nav-tabs a.active{
-background:#0a5c2d;
-color:#fff!important;
+background:#0a5c2d !important;
+color:#fff !important;
+border-radius:20px;
 }
 .phone-btn.active{background:#0a5c2d!important;color:#fff!important}
 /* HERO */
