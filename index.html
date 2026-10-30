@@ -103,6 +103,35 @@ Same-Day Service Near KSTVET. Trusted by Homes & Offices.</p>
 </div>
 
 <a href="https://wa.me/254181189836" class="whatsapp-float">💬 WhatsApp</a>
+  <script>
+// Auto set active based on page + click
+document.addEventListener('DOMContentLoaded', () => {
+  const links = document.querySelectorAll('.nav-tabs a:not(.phone-btn)');
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+
+  // 1. On load - set active by URL
+  links.forEach(link => {
+    link.classList.remove('active');
+    if(link.getAttribute('href') === currentPage){
+      link.classList.add('active');
+    }
+  });
+  // If home
+  if(currentPage === '' || currentPage === 'index.html'){
+    document.querySelector('a[href="index.html"]')?.classList.add('active');
+  }
+
+  // 2. On click - only clicked one gets color
+  links.forEach(link => {
+    link.addEventListener('click', function(){
+      links.forEach(l => l.classList.remove('active'));
+      this.classList.add('active');
+      // close mobile menu
+      document.getElementById('menu-toggle').checked = false;
+    });
+  });
+});
+</script>
 
 </body>
 </html>
