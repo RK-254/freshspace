@@ -22,11 +22,20 @@ box-shadow:0 2px 12px rgba(0,0,0,0.06);
 .menu-toggle{display:none}
 .hamburger{display:none;font-size:26px;cursor:pointer;padding:6px 10px;border:1px solid #ddd;border-radius:8px}
 
-.nav-tabs{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
-.nav-tabs a{text-decoration:none;color:#222;font-weight:700;font-size:14px;padding:8px 10px;border-radius:8px;transition:0.2s}
-.nav-tabs a:hover,.nav-tabs a.active{background:#f0faf3;color:#0a5c2d}
-.phone-btn{background:#0a5c2d!important;color:#fff!important;padding:10px 16px!important;border-radius:30px!important}
-
+.nav-tabs a{
+text-decoration:none;
+color:#222;
+font-weight:700;
+font-size:14px;
+padding:8px 14px;
+border-radius:20px;
+transition:0.2s;
+}
+.nav-tabs a.active{
+background:#0a5c2d;
+color:#fff!important;
+}
+.phone-btn.active{background:#0a5c2d!important;color:#fff!important}
 /* HERO */
 .hero{
 padding:50px 5%;
