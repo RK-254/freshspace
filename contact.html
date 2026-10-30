@@ -5,6 +5,7 @@
 <title>Contact - FreshSpace Cleaning service</title>
 <link rel="stylesheet" href="style.css">
 <style>
+.logo-area img{width:220px!important;height:auto!important;max-height:80px;object-fit:contain}
 .form-box{background:#fff;padding:28px;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.08);max-width:600px;margin:0 auto;text-align:left}
 .form-box label{font-weight:700;font-size:14px;color:#333;margin-top:14px;display:block}
 .form-box input, .form-box select, .form-box textarea{width:100%;padding:13px;border:1px solid #ddd;border-radius:8px;margin-top:6px;font-size:15px;font-family:inherit}
@@ -40,7 +41,6 @@
 <input type="hidden" name="_subject" value="NEW QUOTE - FreshSpace Website">
 <input type="hidden" name="_captcha" value="false">
 <input type="hidden" name="_template" value="table">
-<input type="hidden" name="_next" value="https://rk-254.github.io/freshspace/thankyou.html">
 
 <label>Your Name</label>
 <input type="text" name="Name" required placeholder="e.g. John Kamau">
@@ -64,7 +64,8 @@
 <label>Message</label>
 <textarea name="Message" required placeholder="Tell us: location, house size, pest type..."></textarea>
 
-<button type="submit" class="submit-btn">Send</button>
+<button type="submit" class="submit-btn">Send Message</button>
+<p style="font-size:12px;color:#888;margin-top:10px;text-align:center">We will reply by email & WhatsApp in 5 mins</p>
 </form>
 
 <div>
@@ -72,13 +73,13 @@
 <h3 style="color:#0a5c2d">📞 Call Direct</h3>
 <p style="font-size:22px;font-weight:800;margin:8px 0">+254 181 189836</p>
 <p style="color:#555">Mon-Sun 6am-9pm</p>
-<a href="tel:+254181189836" class="btn btn-green" style="display:block;text-align:center;margin-top:12px">Call Now</a>
+<a href="tel:+254181189836" style="display:block;text-align:center;margin-top:12px;background:#0a5c2d;color:#fff;padding:12px;border-radius:8px;text-decoration:none;font-weight:800">Call Now</a>
 </div>
 
 <div style="background:#fff;padding:22px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.08);margin-bottom:16px">
 <h3 style="color:#0a5c2d">💬 WhatsApp Chat</h3>
 <p style="color:#555;margin:8px 0">Fast reply 7 days - 2 mins</p>
-<a href="https://wa.me/254181189836" class="btn btn-wa" style="display:block;text-align:center">Chat on WhatsApp</a>
+<a href="https://wa.me/254181189836" style="display:block;text-align:center;background:#25D366;color:#fff;padding:12px;border-radius:8px;text-decoration:none;font-weight:800">Chat on WhatsApp</a>
 </div>
 
 <div style="background:#0a5c2d;color:#fff;padding:22px;border-radius:12px">
@@ -93,27 +94,14 @@
 
 <div class="footer"><p>FreshSpace Cleaning & Pest Control - Nairobi - 📞 +254 181 189836 - ✉️ langat2016@gmail.com</p></div>
 <a href="https://wa.me/254181189836" class="whatsapp-float">💬 WhatsApp</a>
-  <script>
+<script>
 document.addEventListener('DOMContentLoaded', () => {
   const links = document.querySelectorAll('.nav-tabs a:not(.phone-btn)');
   const page = window.location.pathname.split('/').pop() || 'index.html';
-  
   links.forEach(link => {
     const href = link.getAttribute('href');
     link.classList.remove('active');
-    // exact match
-    if(href === page || (page === '' && href === 'index.html')){
-      link.classList.add('active');
-    }
-  });
-
-  links.forEach(link => {
-    link.addEventListener('click', function(){
-      links.forEach(l => l.classList.remove('active'));
-      this.classList.add('active');
-      const toggle = document.getElementById('menu-toggle');
-      if(toggle) toggle.checked = false;
-    });
+    if(href === page || (page === '' && href === 'index.html')){link.classList.add('active')}
   });
 });
 </script>
